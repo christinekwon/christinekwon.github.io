@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>me</title>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="resources/css/base.css">
+      <link rel="stylesheet" href="resources/css/home.css">
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="resources/images/favicon.png"/>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="resources/js/home.js"></script>
+   </head>
+
+   <body id="hi" class="w3-content w3-myfont" style="max-width:1300px">
+      <script type="text/javascript">
+         getImages(); 
+      </script>
+      <div id="text">
+      i<br>
+      code with my brain<br>
+      and<br>
+      design with my heart<br>
+      <!--and<br>
+      think outside the box-->
+   </div>
+      <div id="portraits" class="w3-center portraits"></div>
+      <!-- changes page on drop -->
+      <!--<div class="container" id="draggable" draggable="true" ondragstart="dragStart(event)" >
+         <img class="computer" src="resources/images/computer.png">
+         <div id="drag-me">play<br>with<br>me:)</div>
+      </div>-->
+      <!-- just for fun -->
+      <!--<div class="container" id="draggable">
+         <img class="computer" src="resources/images/computer.png">
+         <div id="drag-me">play<br>with<br>me:)</div>
+      </div>-->
+      <!--<div id="draggable">
+         <img class="design" draggable="true" ondragstart="dragStart(event)" src="resources/images/paint.png">
+      </div>-->
+      <div class="design-container destination w3-center" onclick="location.href='file:///Users/christinekwon/Documents/portfolio/design.html'" ondragover="allowDropDesign(event)" ondrop="dropDesign(event)">design</div>
+      <div class="computer-container destination w3-center" onclick="location.href='file:///Users/christinekwon/Documents/portfolio/cs.html'" ondragover="allowDropComputer(event)" ondrop="dropComputer(event)">code</div>
+   </body>
+</html>
