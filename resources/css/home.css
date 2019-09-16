@@ -1,0 +1,153 @@
+html {
+    background: black;
+    color: white;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#text {
+    display: block;
+    margin: 2%;
+    line-height: 300%;
+}
+
+.portraits {
+    margin: 0 auto;
+    display: inline-block;
+    /*animation: fade-out 60s infinite alternate;*/
+}
+
+.portrait {
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+}
+
+@keyframes fade-out {
+    to {
+      /*box-shadow: 0px 0px 10px 10px white;*/
+      opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    to {
+      opacity: 100;
+    }
+}
+
+#draggable { 
+    width: 150px; 
+    height: 150px; 
+    position: relative; 
+}
+
+.computer {
+    width: 15vw;
+    display: block;
+    position: absolute;
+    left: 5vw;
+    top: 4vw;
+}
+
+#drag-me {
+    margin: 0% auto;
+    display: block;
+    position: absolute;
+    left: 7vw;
+    top: 6.7vw;
+    font-size: 1vw;
+    line-height: 100%;
+    color: red;
+}
+
+.destination {
+    width: 15vw;
+    height: 15vw;
+    /*border: 1px solid white;*/
+    border-radius: 50%;
+    /*visibility: hidden;*/
+    text-shadow: 0px 0px 1px white;
+    color: white;
+    opacity: 0;
+    /*animation: fade-in 60s;*/
+    /*-webkit-animation: flickerAnimation .5s infinite;
+    -moz-animation: flickerAnimation .5s infinite;
+    -o-animation: flickerAnimation .5s infinite;
+     animation: flickerAnimation 1s infinite;*/
+     animation: flicker 10s linear infinite;
+}
+
+.computer-container {
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: 40vw;
+    top: 5vw;
+}
+
+.computer-container:hover {
+    cursor: url('../images/cs-cursor.png') 60 50, auto; 
+}
+
+.design {
+    width: 15vw;
+    position: absolute;
+    top: 5vw;
+    left: 5vw;
+}
+
+.design-container {
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: 40vw;
+    top: 40vw;
+}
+
+.design-container:hover {
+    cursor: url('../images/design-cursor.png') 60 30, auto; 
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:0; }
+    89%   { opacity:0; }
+    90%  { opacity:1; }
+    95% { opacity:0; }
+    100%  { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes flicker {
+    96% {
+        opacity: 0;
+    }
+    97% {
+      opacity:1;
+    }
+    98% {
+      opacity:0;
+    }
+    99% {
+      opacity:1;
+    }
+  }

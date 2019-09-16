@@ -1,0 +1,26 @@
+html {
+    background: blue;
+    color: white;
+    cursor: url('../images/cursor.png'), auto; 
+
+}
+
+.buttons {
+    margin: 5%;
+}
+
+.name {
+    background: transparent;
+    border: none;
+    color: #0000ff;
+    font-weight: 900;
+    font-size: 5vw;
+    text-shadow: 0.3vw 0.3vw 0.5vw black;
+    margin: 10px;
+}
+
+.name:hover {
+    color: white;
+    cursor: url('../images/cursor.png'), auto; 
+
+}
