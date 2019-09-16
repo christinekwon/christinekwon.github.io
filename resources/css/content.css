@@ -14,7 +14,7 @@ html {
     border: none;
     color: white;
     font-weight: 900;
-    font-size: 4vw;
+    font-size: 5vw;
     /*text-shadow: 0.2vw 0.2vw 0.2vw white;*/
     margin: 10px;
     
@@ -46,7 +46,7 @@ p {
     font-size: 14px;
 }
 
-h1 {
+/*h1 {
     background: transparent;
     border: none;
     color: white;
@@ -54,4 +54,4 @@ h1 {
     font-size: 5vw;
     text-shadow: 0.3vw 0.3vw 0.5vw black;
     margin: 10px;
-}
+}*/
