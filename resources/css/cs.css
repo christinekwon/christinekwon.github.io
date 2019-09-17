@@ -16,7 +16,12 @@ html {
         text-shadow: 0.3vw 0.3vw 0.3vw black;
         margin: 10px;    
     }
-
+    .name:hover {
+        color: white;
+        cursor: url('../images/cursor.png'), auto; 
+    
+    }
+    
     .buttons {
         margin: 5%;
     }
@@ -33,6 +38,12 @@ html {
         text-shadow: 1vw 1vw 1vw black;
         margin: 10px;    
     }
+    .name:hover {
+        color: white;
+        cursor: url('../images/cursor.png'), auto; 
+    
+    }
+    
     .buttons {
         margin-top: 20%;
     }
