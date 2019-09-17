@@ -57,7 +57,7 @@ body {
         display: block;
         margin-left: 20px;
         line-height: 300%;
-        margin-top: 1000px;
+        margin-top: 220px;
     
     }
 
@@ -124,7 +124,7 @@ body {
 }
 
 .portrait {
-    margin: 15% auto;
+    margin: 0 auto;
     width: 50%;
     display: block;
     position: absolute;
@@ -184,7 +184,7 @@ body {
     -moz-animation: flickerAnimation .5s infinite;
     -o-animation: flickerAnimation .5s infinite;
      animation: flickerAnimation 1s infinite;*/
-     /*animation: flicker 10s linear infinite;*/
+     animation: flicker 10s linear infinite;
 }
 
 .computer-container {
