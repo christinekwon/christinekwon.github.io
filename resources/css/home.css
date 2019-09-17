@@ -107,13 +107,13 @@ body {
 }*/
 
 .portraits {
-    margin: 200px auto;
+    margin: 0 auto;
     display: inline-block;
     /*animation: fade-out 60s infinite alternate;*/
 }
 
 .portrait {
-    margin: 0 auto;
+    margin: 10% auto;
     width: 50%;
     display: block;
     position: absolute;
