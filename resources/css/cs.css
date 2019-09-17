@@ -10,7 +10,7 @@ html {
     .name {
         background: transparent;
         border: none;
-        color: black;
+        color: blue;
         font-weight: 900;
         font-size: 7vw;
         text-shadow: 0.3vw 0.3vw 0.3vw black;
