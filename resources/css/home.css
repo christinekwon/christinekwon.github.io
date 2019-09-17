@@ -184,7 +184,7 @@ body {
     -moz-animation: flickerAnimation .5s infinite;
     -o-animation: flickerAnimation .5s infinite;
      animation: flickerAnimation 1s infinite;*/
-     animation: flicker 10s linear infinite;
+     /*animation: flicker 10s linear infinite;*/
 }
 
 .computer-container {
