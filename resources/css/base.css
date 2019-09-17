@@ -3,3 +3,10 @@ html {
     font-style: normal;
     cursor: url('../images/cursor.png'), auto; 
 }
+
+.home {
+    width: 50px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
