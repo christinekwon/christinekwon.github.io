@@ -11,7 +11,7 @@ body {
     display: block;
     margin-left: 20px;
     line-height: 300%;
-    margin-top: 220px;
+    margin-top: 700px;
 
 }
 @media screen and (min-width: 601px) {
@@ -107,7 +107,7 @@ body {
 }*/
 
 .portraits {
-    margin: 0 auto;
+    margin: 200px auto;
     display: inline-block;
     /*animation: fade-out 60s infinite alternate;*/
 }
