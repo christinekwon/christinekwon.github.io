@@ -222,7 +222,7 @@ function myMove2() {
 
 	elem.onclick = function (e) {
 		let name = e.target.name;
-		location.href = 'cloth-simulation';
+		location.href = 'cloth-sim';
 	}
   
 	// when mouse hovers over circle, it expands and stops
