@@ -1,12 +1,30 @@
 html {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
 }
 
 body {
     font-family: 'Roboto Mono', monospace;
 }
 
+#folder {
+    width: 80%;
+    height: auto;
+}
+
+.project-names {
+    margin: auto;
+    padding-top: 5px;
+    font-size: 10px;
+}
+
+.icon-container {
+    text-align: center;
+    visibility: hidden;
+    width: 100px;
+    height: auto;
+    position: absolute;
+}
 
 @media screen and (min-width: 601px) {
 
@@ -93,44 +111,6 @@ body {
   }
 
 
-/*#text {
-    display: block;
-    margin: 2%;
-    line-height: 300%;
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-}
-
-
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(200px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-}*/
-
-.portraits {
-    margin: 0 auto;
-    display: inline-block;
-    /*animation: fade-out 60s infinite alternate;*/
-}
-
-.portrait {
-    margin: 0 auto;
-    width: 50%;
-    display: block;
-    position: absolute;
-    left: 25%;
-    top: 5%;
-}
 
 @keyframes fade-out {
     to {
@@ -145,78 +125,7 @@ body {
     }
 }
 
-#draggable { 
-    width: 150px; 
-    height: 150px; 
-    position: relative; 
-}
 
-.computer {
-    width: 15vw;
-    display: block;
-    position: absolute;
-    left: 5vw;
-    top: 4vw;
-}
-
-#drag-me {
-    margin: 0% auto;
-    display: block;
-    position: absolute;
-    left: 7vw;
-    top: 6.7vw;
-    font-size: 1vw;
-    line-height: 100%;
-    color: red;
-}
-
-.destination {
-    width: 15vw;
-    height: 15vw;
-    /*border: 1px solid white;*/
-    border-radius: 50%;
-    visibility: visible;
-    text-shadow: 0px 0px 1px white;
-    color: white;
-    opacity: 0;
-    /*animation: fade-in 60s;*/
-    /*-webkit-animation: flickerAnimation .5s infinite;
-    -moz-animation: flickerAnimation .5s infinite;
-    -o-animation: flickerAnimation .5s infinite;
-     animation: flickerAnimation 1s infinite;*/
-     animation: flicker 10s linear infinite;
-}
-
-.computer-container {
-    margin: 0 auto;
-    display: block;
-    position: absolute;
-    left: 40vw;
-    top: 5vw;
-}
-
-.computer-container:hover {
-    cursor: url('../images/cs-cursor.png') 60 50, auto; 
-}
-
-.design {
-    width: 15vw;
-    position: absolute;
-    top: 5vw;
-    left: 5vw;
-}
-
-.design-container {
-    margin: 0 auto;
-    display: block;
-    position: absolute;
-    left: 40vw;
-    top: 40vw;
-}
-
-.design-container:hover {
-    cursor: url('../images/design-cursor.png') 60 30, auto; 
-}
 
 @keyframes flickerAnimation {
     0%   { opacity:0; }

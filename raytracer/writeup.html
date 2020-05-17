@@ -1,0 +1,174 @@
+<html>
+<head>
+    <title> COS426 Assignment 3 Rendering &mdash; Ray Tracer &mdash; Writeup</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<script src="js/student.js"> </script>
+<script src="coursejs/writeup.js"> </script>
+<div class="top">
+<div class="main_div">
+
+<h1> <div class=assignment>COS426 Assignment 3</div> Ray Tracer &mdash; Writeup</h1>
+<h2>Switch to: <a href='index.html'>Interactive Editor</a></h2>
+<br>
+<div id='collaboration'>
+    <div>
+    Collaboration Statement:
+    </div>
+        <br>
+    <div>
+        <em>
+            Under penalty of academic dishonesty (as outlined in RRR)
+            my digital signature below verifies that the following is true:
+            <ul>
+                <p>
+                    That all images in this writeup were generated directly by my solution code
+                    or provided by the course staff (exception: art contest submissions
+                    may pass through intermediary software like GIMP)
+                </p>
+                <p>
+                    That no other student has viewed my writeup explanations
+                    or my writeup images
+                </p>
+                <p>
+                    That my solution code is my own work; particularly that
+                    my solution was not copied from any other
+                    student's solution code, and that no other student
+                    copied their solution directly code from me
+                </p>
+                <p>
+                    That I did not discuss assignment specifics or view
+                    the solution code of any other student besides that of my (optional) partner
+                </p>
+                <p>
+                    That I have followed all other course collaboration
+                    and course plagiarism policies as written on the course website.
+                </p>
+            </ul>
+        </em>
+        <p>
+            <strong>
+                Christine Kwon  (cmkwon)
+            </strong>
+        </p>
+
+        <p>
+            Collaborated with: Christy Lee, Anabelle Chang (christyl, anabelle)
+        </p>
+        <br>
+    </div>
+</div>
+<div class='selectable'>
+<h2 id='student'></h2>
+
+<ul>
+<li>(1.0) <a href='#TraceRay'>Trace Ray and Calculate Color</a></li>
+<li>(2.0) <a href='#Triangle'>Triangle</a></li>
+<li>(2.0) <a href='#Sphere'>Sphere</a></li>
+<li>(2.5) <a href='#Box'>Box</a></li>
+<li>(2.0) <a href='#Cylinder'>Cylinder</a></li>
+<li>(3.0) <a href='#Cone'>Cone</a></li>
+<li>(1.0) <a href='#Shadows'>Shadows</a></li>
+<li>(3.0) <a href='#Soft+shadows'>Soft shadows</a></li>
+<li>(2.0) <a href='#Transmission'>Transmission</a></li>
+<li>(1.0) <a href='#Checkerboard'>Checkerboard</a></li>
+<li>(1.5) <a href='#Phong+material'>Phong material</a></li>
+<li>(1.5) <a href='#Special+material'>Special material</a></li>
+<li>(1.0) <a href='#Scene'>Custom Scene</a></li>
+<li>(2.0) <a href='#Animation'>Animation</a></li>
+<li>(0-5) <a href='#Technical+Extensions'>Technical Extensions</a></li>
+<li>(1.0) <a href='#Art+Contest'>Art Contest</a></li>
+</ul></div>
+
+<p><hr><p><a name='Trace Ray and Calculate Color'></a><h2>TraceRay</h2><p><hr><p>
+<p>For the first part of the assignment, I followed the provided
+instructions to complete the <code>traceRay</code> and <code>calculateColor</code>
+functions.</p>
+
+<p><hr><p><a name='Triangle'></a><h2>Triangle</h2><p><hr><p>
+I find the normal of the plane defined by the three given points. 
+Then, I find the position on the plane that the ray intersects using findIntersectionWithPlane. 
+After that I utilize the second method described in the lecture to determine if the point lies within the triangle.
+<br/><img src='results/mesh.png'>
+
+<p><hr><p><a name='Sphere'></a><h2>Sphere</h2><p><hr><p>
+I find the nearest closest intersection on the sphere using the algorithm described in lecture. 
+Then I find the intersection with the plane.
+<br><img src='results/default.png'>
+
+<p><hr><p><a name='Box'></a><h2>Box</h2><p><hr><p>
+I intersect the ray with each side of the box with findIntersectionWithPlane, and find the closest intersection.
+<br><img src='results/mesh.png'>
+
+<p><hr><p><a name='Cylinder'></a><h2>Cylinder</h2><p><hr><p>
+In getIntersectOpenCylinder, I set up the three equation a, b, and c as described in the assignment 
+specifications to solve for the two solutions of for the quadratic. Then, I find the smallest positive solution 
+that satisfies the relations and use this value to calculate the intersection. 
+In getIntersectDisc, I use the intersection formulae for the bottom and top caps.
+<br><img src='results/default.png'>
+
+<p><hr><p><a name='Cone'></a><h2>Cone</h2><p><hr><p>
+In getIntersectOpenCone, II set up the three equation a, b, and c as described in the assignment 
+specifications to solve for the two solutions of for the quadratic. Then, I find the smallest positive solution 
+that satisfies the relations and use this value to calculate the intersection. 
+<br><img src='results/default.png'>
+
+<p><hr><p><a name='Shadows'></a><h2>Shadows</h2><p><hr><p>
+I compute the distance from position pos to the light. If this distance is less than the length of the 
+light vector, the position is in the shadow, and false otherwise.
+<br><img src='results/default.png'>
+
+<p><hr><p><a name='Soft+shadows'></a><h2>Soft shadows</h2><p><hr><p>
+(Your description of your implementation of Soft shadows goes here...)
+
+<p><hr><p><a name='Transmission'></a><h2>Transmission</h2><p><hr><p>
+I use Snell's law to determine the outgoing refraction direction.
+<br><img src='results/default.png'>
+
+<p><hr><p><a name='Checkerboard'></a><h2>Checkerboard</h2><p><hr><p>
+I used a scale factor of 8 for the tile size. 
+For each of the 3 components of posIntersection, I divide by 8 and round up to the nearest integer, and sum up all of the values. 
+If the remainder of dividing the sum by 2 is zero, I color the pixel black.
+<br><img src='results/default.png'>
+
+<p><hr><p><a name='Phong+material'></a><h2>Phong material</h2><p><hr><p>
+I utilize the equation given in lecture to calculate the phongTerm.
+<br><img src='results/default.png'>
+
+<p><hr><p><a name='Special+material'></a><h2>Special material</h2><p><hr><p>
+(Your description of your implementation of Special material goes here...)
+
+<p><hr><p><a name='Scene'></a><h2>Custom Scene</h2><p><hr><p>
+I was inspired by one of the scenes in Drake's "Hotline Bling" music video, so I created a staircase leading up to an opening in the ceiling in 'hb.json'. 
+Each of the stairs is a box, and the ceiling is also composed of four boxes pieces together with an opening in the middle.
+<br><img src='results/hb.png'>
+
+<p><hr><p><a name='Animation'></a><h2>Animation</h2><p><hr><p>
+In 'bubbles.json,' I created a deeper and wider looking room that is illuminated with pink and blue lights. 
+I placed multiple glass spheres of varying radii at random locations in the room. 
+I added a field 'a' that can be appended to the url, that indicates a time interval, and it is used to calculate the size of the new radii for each sphere in the scene in 'scene.js'. 
+For example, if a=1, then each of the spheres' radii increases or decreases by 1. 
+I have also added a field called 'sign' in the sphere object, which is set to -1 for spheres that shrink from the start (a=0), and 1 for spheres that grow as the scene progresses. 
+The spheres all have a maximum radius of 10, so when it grows up to that value, it starts shrinking. 
+Similarly, once a sphere shrinks down to 0, it grows back up. 
+In short, all of the glass spheres with different starting sizes grow and shrink while staying between radius values of 0 and 10. 
+The video can be found here: https://drive.google.com/file/d/1FGI7l3n1Nbn5Ic_XLEN5otVJnHRDk8bs/view?usp=sharing 
+<br><img src='results/bubbles.png'>
+
+<p><hr><p><a name='Technical+Extensions'></a><h2>Technical Extensions</h2><p><hr><p>
+(Your description of your implementation of Technical Extensions goes here...)
+
+<p><hr><p><a name='Art+Contest'></a><h2>Art Contest</h2><p><hr><p>
+I would like to submit my animation to the art contest: 
+https://drive.google.com/file/d/1FGI7l3n1Nbn5Ic_XLEN5otVJnHRDk8bs/view?usp=sharing 
+Description: 
+I created a deeper and wider room that is illuminated with pink and blue lights, and placed multiple glass spheres of varying radii at random locations in the room. 
+All of the glass spheres have different starting sizes, and they repeatedly grow and shrink while staying between radius values of 0 and 10.
+<br><img src='results/bubbles.png'>
+
+</div>
+</div>
+</body>
+</html>
