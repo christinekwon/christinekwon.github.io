@@ -12,6 +12,17 @@ body {
     height: auto;
 }
 
+.img-container {
+    text-align: center;
+}
+
+#mac {
+    z-index: 0;
+    width: 30%;
+    margin-top: 30vh;
+    margin-left: auto;
+}
+
 .project-names {
     margin: auto;
     padding-top: 5px;
