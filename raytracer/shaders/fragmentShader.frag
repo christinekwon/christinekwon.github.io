@@ -599,9 +599,10 @@ float softShadowRatio(vec3 pos, vec3 lightVec) {
     for (int j = 0; j < 3; j++) {
       offset_x = float(i) / n;
       offset_y = float(j) / n;
-      seed = vec2(pow(float(i) * pos[2] - lightVec[1], float(j) + pos[0] * lightVec[0]), float(i) * lightVec[2] * pos[1]);
+      seed = vec2(pow(float(i) * pos[2] - lightVec[1], float(j)), float(i) * lightVec[2] * pos[1]);
+      // seed = vec2(pow(float(i) * pos[2] - lightVec[1], float(j) + pos[0] * lightVec[0]), float(i) * lightVec[2] * pos[1]);
       rand_x = rand(seed);
-      seed = vec2(pow(float(-i) * pos[2] - lightVec[1], float(j) + pos[0] * lightVec[0]), float(-i) * lightVec[2] * pos[1]);
+      seed = vec2(pow(float(-i) * pos[2] - lightVec[1], float(j) / pos[0] * lightVec[0]), float(-i) * lightVec[2] * pos[1]);
       // seed = vec2(pow(lightVec[2] / pos[1] * pos[2], -1.0 * float(i) * float(i) * pos[2]), pow(float(j) * pos[2] - lightVec[1], float(j) / lightVec[0]));
       rand_y = rand(seed);
       jitter_x = offset_x + (rand_x / n);

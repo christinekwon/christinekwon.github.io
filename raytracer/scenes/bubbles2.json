@@ -5,16 +5,24 @@
         "normal": [0, 0, 1],
         "dist": 200,
         "material": {
-            "color": [1,0.7,0.7]
+            "color": [1,0.9,0.9],
+            "shininess": 1000,
+            "specular": [1, 1, 1],
+            "reflectivity": 1,
+            "reflectType": "MIRRORREFLECT"
         }
     },
     {
         "comment": "// the front of the cornell box",
         "type": "plane",
         "normal": [0, 0, -1],
-        "dist": 40,
+        "dist": 50,
         "material": {
-            "color": [1,1,1]
+            "color": [1,1,0.7],
+            "shininess": 1000,
+            "specular": [1, 1, 1],
+            "reflectivity": 1,
+            "reflectType": "MIRRORREFLECT"
         }
     },
     {
@@ -23,7 +31,7 @@
         "normal": [1, 0, 0],
         "dist": 100,
         "material": {
-            "color": [0.7,0.7,1]
+            "color": [1,1,0.7]
         }
     },
     {
@@ -32,7 +40,7 @@
         "normal": [-1, 0, 0],
         "dist": 100,
         "material": {
-            "color": [0.7,0.7,1]
+            "color": [1,1,0.7]
         }
     },
     {
@@ -41,7 +49,7 @@
         "normal": [0, 1, 0],
         "dist": 50,
         "material": {
-            "color": [0.9,0.9,1]
+            "color": [1,1,0.7]
         }
     },
     {
@@ -50,34 +58,51 @@
         "normal": [0, -1, 0],
         "dist": 50,
         "material": {
-            "color": [0.7,0.7,1]
+            "color": [1,1,0.7]
         }
     },
 
     {
-        "comment": "// the top RIGHT strip of the cornell box",
+        "comment": "// the top strip of the cornell box",
         "type": "plane",
-        "normal": [0.5, 0.5, 0],
-        "dist": 60,
+        "normal": [0, 1, 1],
+        "dist": 244,
         "material": {
-            "color": [1,1,1]
+            "color": [1,1,0.7]
         }
     },
     {
-        "comment": "// the top left strip of the cornell box",
+        "comment": "// the bottom strip of the cornell box",
         "type": "plane",
-        "normal": [-0.5, 0.5, 0],
-        "dist": 60,
+        "normal": [0, -1, 1],
+        "dist": 244,
         "material": {
-            "color": [1,1,1]
+            "color": [1,1,0.7]
         }
     },
-
+    {
+        "comment": "// the left strip of the cornell box",
+        "type": "plane",
+        "normal": [-1, 0, 1],
+        "dist": 294,
+        "material": {
+            "color": [1,1,0.7]
+        }
+    },
+    {
+        "comment": "// the right strip of the cornell box",
+        "type": "plane",
+        "normal": [1, 0, 1],
+        "dist": 294,
+        "material": {
+            "color": [1,1,0.7]
+        }
+    },
 
     {
         "type": "sphere",
         "center": [-4, -2, 20],
-        "radius": 7,
+        "radius": 9,
         "sign": -1,
         "material": {
             "type": "PHONGMATERIAL",
@@ -91,63 +116,7 @@
     {
         "type": "sphere",
         "center": [5, 2, 20],
-        "radius": 5,
-        "sign": 1,
-        "material": {
-            "type": "PHONGMATERIAL",
-            "color": [0.2, 0.4, 1],
-            "shininess": 1000,
-            "specular": [1, 1, 1],
-            "reflectivity": 1,
-            "reflectType": "GLASSREFLECT"
-        }
-    },
-    {
-        "type": "sphere",
-        "center": [-33, 7, 20],
-        "radius": 9,
-        "sign": -1,
-        "material": {
-            "type": "PHONGMATERIAL",
-            "color": [0.2, 0.4, 1],
-            "shininess": 1000,
-            "specular": [1, 1, 1],
-            "reflectivity": 1,
-            "reflectType": "GLASSREFLECT"
-        }
-    },
-    {
-        "type": "sphere",
-        "center": [9, -20, 58],
-        "radius": 0,
-        "sign": 1,
-        "material": {
-            "type": "PHONGMATERIAL",
-            "color": [0.2, 0.4, 1],
-            "shininess": 1000,
-            "specular": [1, 1, 1],
-            "reflectivity": 1,
-            "reflectType": "GLASSREFLECT"
-        }
-    },
-    {
-        "type": "sphere",
-        "center": [29, -20, 18],
         "radius": 7,
-        "sign": -1,
-        "material": {
-            "type": "PHONGMATERIAL",
-            "color": [0.2, 0.4, 1],
-            "shininess": 1000,
-            "specular": [1, 1, 1],
-            "reflectivity": 1,
-            "reflectType": "GLASSREFLECT"
-        }
-    },
-    {
-        "type": "sphere",
-        "center": [40, -15, 30],
-        "radius": 5,
         "sign": 1,
         "material": {
             "type": "PHONGMATERIAL",
@@ -160,8 +129,8 @@
     },
     {
         "type": "sphere",
-        "center": [20, 17, 50],
-        "radius": 5,
+        "center": [-17, -2, 10],
+        "radius": 4,
         "sign": -1,
         "material": {
             "type": "PHONGMATERIAL",
@@ -174,8 +143,23 @@
     },
     {
         "type": "sphere",
-        "center": [-40, -25, 70],
-        "radius": 3,
+        "center": [6, -7, 13],
+        "radius": 8,
+        "sign": -1,
+        "material": {
+            "type": "PHONGMATERIAL",
+            "color": [0.2, 0.4, 1],
+            "shininess": 1000,
+            "specular": [1, 1, 1],
+            "reflectivity": 1,
+            "reflectType": "GLASSREFLECT"
+        }
+    },
+
+    {
+        "type": "sphere",
+        "center": [15, -7, 5],
+        "radius": 4,
         "sign": 1,
         "material": {
             "type": "PHONGMATERIAL",
@@ -188,23 +172,9 @@
     },
     {
         "type": "sphere",
-        "center": [-10, -25, 30],
-        "radius": 3,
-        "sign": -1,
-        "material": {
-            "type": "PHONGMATERIAL",
-            "color": [0.2, 0.4, 1],
-            "shininess": 1000,
-            "specular": [1, 1, 1],
-            "reflectivity": 1,
-            "reflectType": "GLASSREFLECT"
-        }
-    },
-    {
-        "type": "sphere",
-        "center": [39, 17, 28],
+        "center": [12, -7, 7],
         "radius": 2,
-        "sign": -1,
+        "sign": 1,
         "material": {
             "type": "PHONGMATERIAL",
             "color": [0.2, 0.4, 1],
@@ -214,10 +184,11 @@
             "reflectType": "GLASSREFLECT"
         }
     },
+
     {
         "type": "sphere",
-        "center": [-11, 25, 20],
-        "radius": 0,
+        "center": [-15, 5, 15],
+        "radius": 10,
         "sign": 1,
         "material": {
             "type": "PHONGMATERIAL",
@@ -230,9 +201,24 @@
     },
     {
         "type": "sphere",
-        "center": [-50, -25, 50],
-        "radius": 0,
-        "sign": -1,
+        "center": [-21, 9, 8],
+        "radius": 2,
+        "sign": 1,
+        "material": {
+            "type": "PHONGMATERIAL",
+            "color": [0.2, 0.4, 1],
+            "shininess": 1000,
+            "specular": [1, 1, 1],
+            "reflectivity": 1,
+            "reflectType": "GLASSREFLECT"
+        }
+    },
+
+    {
+        "type": "sphere",
+        "center": [30, 15, 25],
+        "radius": 3,
+        "sign": 1,
         "material": {
             "type": "PHONGMATERIAL",
             "color": [0.2, 0.4, 1],
@@ -242,55 +228,39 @@
             "reflectType": "GLASSREFLECT"
         }
     }
-
-
-
 
 ],
 
 "lights": [
     {
-        "pos": [-80, 20, 20],
+        "pos": [-70, 20, 20],
         "color": [1, 1, 1],
-        "intensity": 100,
+        "intensity":80,
+        "attenuate": 2
+    },
+    {
+        "pos": [70, 20, 20],
+        "color": [1, 1, 1],
+        "intensity": 80,
+        "attenuate": 2
+    },
+    {
+        "pos": [0, 30, 10],
+        "color": [1, 1, 1],
+        "intensity": 60,
+        "attenuate": 2
+    },
+    {
+        "pos": [-60, 0, 150],
+        "color": [1, 0, 0],
+        "intensity": 50,
         "attenuate": 3
     },
     {
-        "pos": [80, 20, 20],
-        "color": [1, 1, 1],
-        "intensity": 100,
+        "pos": [60, 0, 150],
+        "color": [1, 0, 0],
+        "intensity": 50,
         "attenuate": 3
-    },
-    {
-        "pos": [0, 40, 10],
-        "color": [1, 1, 1],
-        "intensity": 100,
-        "attenuate": 3
-    },
-    {
-        "pos": [0, 0, 130],
-        "color": [0, 0, 1],
-        "intensity": 30,
-        "attenuate": 0.1
-    },
-    {
-        "pos": [-40, 0, 170],
-        "color": [0.9, 0, 1],
-        "intensity": 20,
-        "attenuate": 2.5
-    },
-    {
-        "pos": [40, 0, 170],
-        "color": [0.9, 0, 1],
-        "intensity": 20,
-        "attenuate": 2.5
-    },
-    {
-        "pos": [0, 0, 170],
-        "color": [0.9, 0, 1],
-        "intensity": 20,
-        "attenuate": 2.5
     }
-
 ]
 }

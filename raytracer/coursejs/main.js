@@ -8,11 +8,9 @@ window.onload = function() {
   var paused = false;
   var debug = cmd.debug || false;
 
-  Scene.sceneName = cmd.scene || "default";
+  Scene.sceneName = cmd.scene || "bubbles2";
   Raytracer.init(height, width, debug);
   Scene.setUniforms();
-
-  Student.updateHTML();
 
   var drawScene = function() {
     if (!animated || !paused) Raytracer.render(animated);
