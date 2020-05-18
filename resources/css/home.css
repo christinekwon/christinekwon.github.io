@@ -13,20 +13,43 @@ body {
 }
 
 .img-container {
+    align-content: center;
     text-align: center;
+    width: 40vw;
+    height: auto;
+    margin-top: 25vh;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color: transparent;
 }
 
+
 #mac {
+    position: relative;
+    align-content: center;
     z-index: 0;
-    width: 30%;
-    margin-top: 30vh;
-    margin-left: auto;
+    width: 100%;
+}
+
+.mac-text {
+    position: absolute;
+    left: 40%;
+    top: 23%;
+    z-index: 1;
+    width: 15%;
+    text-align: left;
+    font-size: 0.75vw;
+    font-weight: 800;
+    color: rgb(73, 73, 73);
 }
 
 .project-names {
     margin: auto;
     padding-top: 5px;
     font-size: 10px;
+    /* color: rgba(255, 225, 236, 0.7); */
 }
 
 .icon-container {
@@ -36,7 +59,7 @@ body {
     width: 100px;
     height: auto;
     position: absolute;
-    padding: 10px 0px;
+    padding: 15px 0px;
     border-radius: 5px;
 }
 

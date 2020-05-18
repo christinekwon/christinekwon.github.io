@@ -8,17 +8,19 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="resources/css/base.css">
 		<link rel="stylesheet" href="resources/css/home.css">
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
 		<link rel="shortcut icon" type="image/png" href="resources/images/favicon.png"/>
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script src="resources/js/script.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 	</head>
 
 	<body onload="animate()">
 		<div class="img-container">
 			<img id="mac" src="resources/images/mac-white.png">
+			<span class="mac-text"></span>
+			<!-- <p class="mac-text">This is a typewriter effect.</p>		 -->
 		</div>
 		<div name="ttr" class="icon-container" id="myAnimation0">
 			<img class="folder" id="folder0" name="ttr" src="resources/images/folder-closed.png">
@@ -50,7 +52,10 @@
 			<div class="project-names" name="raytracer">raytracer</div>
 			<span class="tooltiptext">Implemented a photorealistic raytracing engine using GLSL to render an abstract scene.</span>
 		</div>
-
-
 	</body>
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	<script src="resources/js/script.js"></script>
+	<script src="resources/js/typed.js"></script>
+
 </html>

@@ -7,16 +7,18 @@ function animate() {
 	myMove5();
 }
 
-const backgroundColor = "rgba(250, 212, 227, 0.5)"
+const backgroundColor = "rgba(255, 225, 236, 0.8)";
+// const backgroundColor = "transparent";
 // const backgroundColor = "rgba(128, 255, 249, 0.78)"
 const padding = "10px 0px";
 const borderRadius = "5px";
 const bottomPadding = 125;
 const rightPadding = 125;
+const speed = 10;
 
 // ttr
 function myMove0() {
-	// console.log(document.getElementsByTagName("img"));
+	// console.log(document.getElementsByClassName("icon-container"));
 	var elem = document.getElementById("myAnimation0");
 	var xpos = (Math.random() * window.innerWidth) + 0; // x coordinate of circle
 	var ypos = (Math.random() * window.innerHeight) + 0; // y coordinate of circle
@@ -59,7 +61,7 @@ function myMove0() {
 	}, false);
 
 	// calculate location change every 10 milliseconds by calling frame() function
-	setInterval(frame, 10);
+	setInterval(frame, speed);
   
  	function frame() {
 		elem.style.visibility = "visible";
@@ -163,7 +165,7 @@ function myMove1() {
 	}, false);
 
 	// calculate location change every 10 milliseconds by calling frame() function
-	setInterval(frame, 10);
+	setInterval(frame, speed);
   
  	function frame() {
 		elem.style.visibility = "visible";
@@ -268,7 +270,7 @@ function myMove2() {
 	}, false);
 
 	// calculate location change every 10 milliseconds by calling frame() function
-	setInterval(frame, 10);
+	setInterval(frame, speed);
   
  	function frame() {
 		elem.style.visibility = "visible";
@@ -373,7 +375,7 @@ function myMove3() {
 	}, false);
 
 	// calculate location change every 10 milliseconds by calling frame() function
-	setInterval(frame, 10);
+	setInterval(frame, speed);
   
  	function frame() {
 		elem.style.visibility = "visible";
@@ -478,7 +480,7 @@ function myMove4() {
 	}, false);
 
 	// calculate location change every 10 milliseconds by calling frame() function
-	setInterval(frame, 10);
+	setInterval(frame, speed);
   
  	function frame() {
 		elem.style.visibility = "visible";
@@ -582,7 +584,7 @@ function myMove5() {
 	}, false);
 
 	// calculate location change every 10 milliseconds by calling frame() function
-	setInterval(frame, 10);
+	setInterval(frame, speed);
   
  	function frame() {
 		elem.style.visibility = "visible";
