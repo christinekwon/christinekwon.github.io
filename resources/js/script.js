@@ -4,11 +4,19 @@ function animate() {
 	myMove2();
 	myMove3();
 	myMove4();
+	myMove5();
 }
+
+const backgroundColor = "rgba(250, 212, 227, 0.5)"
+// const backgroundColor = "rgba(128, 255, 249, 0.78)"
+const padding = "10px 0px";
+const borderRadius = "5px";
+const bottomPadding = 120;
+const rightPadding = 100;
 
 // ttr
 function myMove0() {
-	console.log(document.getElementsByTagName("img"));
+	// console.log(document.getElementsByTagName("img"));
 	var elem = document.getElementById("myAnimation0");
 	var xpos = (Math.random() * window.innerWidth) + 0; // x coordinate of circle
 	var ypos = (Math.random() * window.innerHeight) + 0; // y coordinate of circle
@@ -30,17 +38,19 @@ function myMove0() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = 'auto';
-		event.target.src = "resources/images/folder-open.png";
+		document.getElementById("folder0").src = "resources/images/folder-open.png";
+		elem.style.backgroundColor = backgroundColor;
+		elem.style.padding = padding;
+		elem.style.borderRadius = borderRadius;
+		elem.style.zIndex = "2";
 		stop = true;
 	}, false);
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = 'auto';
-		event.target.src = "resources/images/folder-closed.png";
+		document.getElementById("folder0").src = "resources/images/folder-closed.png";
+		elem.style.backgroundColor = "transparent";
+		elem.style.zIndex = "1";
 		stop = false;
 	}, false);
 
@@ -52,7 +62,7 @@ function myMove0() {
 	  	// only execute script if the mouse is not hovering over the circle
 		if (!stop) {
 			// when circle reaches bottom edge of window, bounce back
-			if (ypos >= window.innerHeight - 100) {
+			if (ypos >= window.innerHeight - bottomPadding) {
 				y_increasing = false;
 				ypos--;
 				elem.style.top = ypos + 'px'; 
@@ -77,7 +87,7 @@ function myMove0() {
 			}
 	
 			// when circle reaches right edge of window, bounce back
-			if (xpos >= window.innerWidth - 60) {
+			if (xpos >= window.innerWidth - rightPadding) {
 				x_increasing = false;
 				xpos--;
 				elem.style.left = xpos + 'px'; 
@@ -128,17 +138,19 @@ function myMove1() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = '50px';
-		event.target.src = "resources/images/folder-open.png";
+		document.getElementById("folder1").src = "resources/images/folder-open.png";
+		elem.style.backgroundColor = backgroundColor;
+		elem.style.padding = padding;
+		elem.style.borderRadius = borderRadius;
+		elem.style.zIndex = "2";
 		stop = true;
 	}, false);
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = '50px';
-		event.target.src = "resources/images/folder-closed.png";
+		document.getElementById("folder1").src = "resources/images/folder-closed.png";
+		elem.style.backgroundColor = "transparent";
+		elem.style.zIndex = "1";
 		stop = false;
 	}, false);
 
@@ -150,7 +162,7 @@ function myMove1() {
 	  	// only execute script if the mouse is not hovering over the circle
 		if (!stop) {
 			// when circle reaches bottom edge of window, bounce back
-			if (ypos >= window.innerHeight - 100) {
+			if (ypos >= window.innerHeight - bottomPadding) {
 				y_increasing = false;
 				ypos--;
 				elem.style.top = ypos + 'px'; 
@@ -175,7 +187,7 @@ function myMove1() {
 			}
 	
 			// when circle reaches right edge of window, bounce back
-			if (xpos >= window.innerWidth - 60) {
+			if (xpos >= window.innerWidth - rightPadding) {
 				x_increasing = false;
 				xpos--;
 				elem.style.left = xpos + 'px'; 
@@ -224,20 +236,22 @@ function myMove2() {
 		let name = e.target.name;
 		location.href = 'cloth-sim';
 	}
-  
+
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = '50px';
-		event.target.src = "resources/images/folder-open.png";
+		document.getElementById("folder2").src = "resources/images/folder-open.png";
+		elem.style.backgroundColor = backgroundColor;
+		elem.style.padding = padding;
+		elem.style.borderRadius = borderRadius;
+		elem.style.zIndex = "2";
 		stop = true;
 	}, false);
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = '50px';
-		event.target.src = "resources/images/folder-closed.png";
+		document.getElementById("folder2").src = "resources/images/folder-closed.png";
+		elem.style.backgroundColor = "transparent";
+		elem.style.zIndex = "1";		
 		stop = false;
 	}, false);
 
@@ -249,7 +263,7 @@ function myMove2() {
 	  	// only execute script if the mouse is not hovering over the circle
 		if (!stop) {
 			// when circle reaches bottom edge of window, bounce back
-			if (ypos >= window.innerHeight - 100) {
+			if (ypos >= window.innerHeight - bottomPadding) {
 				y_increasing = false;
 				ypos--;
 				elem.style.top = ypos + 'px'; 
@@ -274,7 +288,7 @@ function myMove2() {
 			}
 	
 			// when circle reaches right edge of window, bounce back
-			if (xpos >= window.innerWidth - 60) {
+			if (xpos >= window.innerWidth - rightPadding) {
 				x_increasing = false;
 				xpos--;
 				elem.style.left = xpos + 'px'; 
@@ -326,17 +340,19 @@ function myMove3() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = '50px';
-		event.target.src = "resources/images/folder-open.png";
+		document.getElementById("folder3").src = "resources/images/folder-open.png";
+		elem.style.backgroundColor = backgroundColor;
+		elem.style.padding = padding;
+		elem.style.borderRadius = borderRadius;
+		elem.style.zIndex = "2";
 		stop = true;
 	}, false);
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = '50px';
-		event.target.src = "resources/images/folder-closed.png";
+		document.getElementById("folder3").src = "resources/images/folder-closed.png";
+		elem.style.backgroundColor = "transparent";
+		elem.style.zIndex = "1";
 		stop = false;
 	}, false);
 
@@ -348,7 +364,7 @@ function myMove3() {
 	  	// only execute script if the mouse is not hovering over the circle
 		if (!stop) {
 			// when circle reaches bottom edge of window, bounce back
-			if (ypos >= window.innerHeight - 100) {
+			if (ypos >= window.innerHeight - bottomPadding) {
 				y_increasing = false;
 				ypos--;
 				elem.style.top = ypos + 'px'; 
@@ -373,7 +389,7 @@ function myMove3() {
 			}
 	
 			// when circle reaches right edge of window, bounce back
-			if (xpos >= window.innerWidth - 60) {
+			if (xpos >= window.innerWidth - rightPadding) {
 				x_increasing = false;
 				xpos--;
 				elem.style.left = xpos + 'px'; 
@@ -425,17 +441,19 @@ function myMove4() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = '50px';
-		event.target.src = "resources/images/folder-open.png";
+		document.getElementById("folder4").src = "resources/images/folder-open.png";
+		elem.style.backgroundColor = backgroundColor;
+		elem.style.padding = padding;
+		elem.style.borderRadius = borderRadius;
+		elem.style.zIndex = "2";
 		stop = true;
 	}, false);
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = '50px';
-		event.target.src = "resources/images/folder-closed.png";
+		document.getElementById("folder4").src = "resources/images/folder-closed.png";
+		elem.style.backgroundColor = "transparent";
+		elem.style.zIndex = "1";		
 		stop = false;
 	}, false);
 
@@ -447,7 +465,7 @@ function myMove4() {
 	  	// only execute script if the mouse is not hovering over the circle
 		if (!stop) {
 			// when circle reaches bottom edge of window, bounce back
-			if (ypos >= window.innerHeight - 100) {
+			if (ypos >= window.innerHeight - bottomPadding) {
 				y_increasing = false;
 				ypos--;
 				elem.style.top = ypos + 'px'; 
@@ -472,7 +490,7 @@ function myMove4() {
 			}
 	
 			// when circle reaches right edge of window, bounce back
-			if (xpos >= window.innerWidth - 60) {
+			if (xpos >= window.innerWidth - rightPadding) {
 				x_increasing = false;
 				xpos--;
 				elem.style.left = xpos + 'px'; 
@@ -501,7 +519,7 @@ function myMove4() {
 }
 
 // raytracer
-function myMove4() {
+function myMove5() {
 	var elem = document.getElementById("myAnimation5");
 	var xpos = (Math.random() * window.innerWidth) + 0; // x coordinate of circle
 	var ypos = (Math.random() * window.innerHeight) + 0; // y coordinate of circle
@@ -523,17 +541,19 @@ function myMove4() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = '50px';
-		event.target.src = "resources/images/folder-open.png";
+		document.getElementById("folder5").src = "resources/images/folder-open.png";
+		elem.style.backgroundColor = backgroundColor;
+		elem.style.padding = padding;
+		elem.style.borderRadius = borderRadius;
+		elem.style.zIndex = "2";
 		stop = true;
 	}, false);
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		// event.target.style.width = '50px';
-		// event.target.style.height = '50px';
-		event.target.src = "resources/images/folder-closed.png";
+		document.getElementById("folder5").src = "resources/images/folder-closed.png";
+		elem.style.backgroundColor = "transparent";
+		elem.style.zIndex = "1";		
 		stop = false;
 	}, false);
 
@@ -545,7 +565,7 @@ function myMove4() {
 	  	// only execute script if the mouse is not hovering over the circle
 		if (!stop) {
 			// when circle reaches bottom edge of window, bounce back
-			if (ypos >= window.innerHeight - 100) {
+			if (ypos >= window.innerHeight - bottomPadding) {
 				y_increasing = false;
 				ypos--;
 				elem.style.top = ypos + 'px'; 
@@ -570,7 +590,7 @@ function myMove4() {
 			}
 	
 			// when circle reaches right edge of window, bounce back
-			if (xpos >= window.innerWidth - 60) {
+			if (xpos >= window.innerWidth - rightPadding) {
 				x_increasing = false;
 				xpos--;
 				elem.style.left = xpos + 'px'; 

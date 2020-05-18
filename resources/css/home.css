@@ -7,7 +7,7 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
-#folder {
+.folder {
     width: 80%;
     height: auto;
 }
@@ -30,14 +30,39 @@ body {
 }
 
 .icon-container {
+    background: transparent;
     text-align: center;
     visibility: hidden;
     width: 100px;
     height: auto;
     position: absolute;
+    padding: 10px 0px;
 }
 
-@media screen and (min-width: 601px) {
+.tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 2px dashed pink;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 10px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 175%;
+    margin-left: -60px;
+}
+
+.icon-container:hover .tooltiptext {
+    visibility: visible;   
+}
+
+/* @media screen and (min-width: 601px) {
 
     #text {
         display: block;
@@ -50,14 +75,13 @@ body {
     .tooltip {
         position: relative;
         display: inline-block;
-        border-bottom: 1px dotted yellow; /* If you want dots under the hoverable text */
+        border-bottom: 1px dotted rgb(250, 212, 227);
         margin-left: 20px;
         font-size: 8px;
         color: yellow;
         margin-top: 200px;  
     }
       
-      /* Tooltip text */
       .tooltip .tooltiptext {
         visibility: hidden;
         width: 120px;
@@ -67,12 +91,10 @@ body {
         padding: 0px 10px;
         border-radius: 6px;
        
-        /* Position the tooltip text - see examples below! */
         position: absolute;
         z-index: 1;
       }
       
-      /* Show the tooltip text when you mouse over the tooltip container */
       .tooltip:hover .tooltiptext {
         visibility: visible;
       }
@@ -80,7 +102,7 @@ body {
   }
   
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
 
     #text {
         display: block;
@@ -93,14 +115,13 @@ body {
     .tooltip {
         position: relative;
         display: inline-block;
-        border-bottom: 1px dotted yellow; /* If you want dots under the hoverable text */
+        border-bottom: 1px dotted yellow;
         margin-left: 20px;
         font-size: 8px;
         color: yellow;
         margin-top: 200px;  
     }
       
-      /* Tooltip text */
       .tooltip .tooltiptext {
         visibility: visible;
         width: 120px;
@@ -110,12 +131,10 @@ body {
         padding: 0px 10px;
         border-radius: 6px;
        
-        /* Position the tooltip text - see examples below! */
         position: absolute;
         z-index: 1;
       }
       
-      /* Show the tooltip text when you mouse over the tooltip container */
       .tooltip:hover .tooltiptext {
         visibility: visible;
       }
@@ -125,7 +144,6 @@ body {
 
 @keyframes fade-out {
     to {
-      /*box-shadow: 0px 0px 10px 10px white;*/
       opacity: 0;
     }
 }
@@ -174,4 +192,4 @@ body {
     99% {
       opacity:1;
     }
-  }
+  }*/
