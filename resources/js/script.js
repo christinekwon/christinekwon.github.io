@@ -11,8 +11,8 @@ const backgroundColor = "rgba(250, 212, 227, 0.5)"
 // const backgroundColor = "rgba(128, 255, 249, 0.78)"
 const padding = "10px 0px";
 const borderRadius = "5px";
-const bottomPadding = 120;
-const rightPadding = 100;
+const bottomPadding = 125;
+const rightPadding = 125;
 
 // ttr
 function myMove0() {
@@ -26,7 +26,7 @@ function myMove0() {
 	// flag; true means circle is moving l --> r, false means r --> l
 	var x_increasing = Math.random() >= 0.5; 
 	// flag; true means circle is moving top -- > bottom, false means bottom --> top
-	var y_increasing = Math.random() >= 0.5; 
+	var y_increasing = Math.random() >= 0.5;
 	
 	// true = circle is stopped, false = circle is moving
 	var stop = false;
@@ -40,9 +40,13 @@ function myMove0() {
 	elem.addEventListener("mouseover", function( event ) {   
 		document.getElementById("folder0").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
-		elem.style.padding = padding;
-		elem.style.borderRadius = borderRadius;
 		elem.style.zIndex = "2";
+		if (xpos > window.innerWidth / 4 * 3) {
+			elem.children[2].style.left = "-105%";
+		}
+		else {
+			elem.children[2].style.left = "175%";
+		}
 		stop = true;
 	}, false);
   
@@ -140,9 +144,13 @@ function myMove1() {
 	elem.addEventListener("mouseover", function( event ) {   
 		document.getElementById("folder1").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
-		elem.style.padding = padding;
-		elem.style.borderRadius = borderRadius;
 		elem.style.zIndex = "2";
+		if (xpos > window.innerWidth / 4 * 3) {
+			elem.children[2].style.left = "-105%";
+		}
+		else {
+			elem.children[2].style.left = "175%";
+		}
 		stop = true;
 	}, false);
   
@@ -241,9 +249,13 @@ function myMove2() {
 	elem.addEventListener("mouseover", function( event ) {   
 		document.getElementById("folder2").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
-		elem.style.padding = padding;
-		elem.style.borderRadius = borderRadius;
 		elem.style.zIndex = "2";
+		if (xpos > window.innerWidth / 4 * 3) {
+			elem.children[2].style.left = "-105%";
+		}
+		else {
+			elem.children[2].style.left = "175%";
+		}
 		stop = true;
 	}, false);
   
@@ -342,9 +354,13 @@ function myMove3() {
 	elem.addEventListener("mouseover", function( event ) {   
 		document.getElementById("folder3").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
-		elem.style.padding = padding;
-		elem.style.borderRadius = borderRadius;
 		elem.style.zIndex = "2";
+		if (xpos > window.innerWidth / 4 * 3) {
+			elem.children[2].style.left = "-105%";
+		}
+		else {
+			elem.children[2].style.left = "175%";
+		}
 		stop = true;
 	}, false);
   
@@ -443,9 +459,13 @@ function myMove4() {
 	elem.addEventListener("mouseover", function( event ) {   
 		document.getElementById("folder4").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
-		elem.style.padding = padding;
-		elem.style.borderRadius = borderRadius;
 		elem.style.zIndex = "2";
+		if (xpos > window.innerWidth / 4 * 3) {
+			elem.children[2].style.left = "-105%";
+		}
+		else {
+			elem.children[2].style.left = "175%";
+		}
 		stop = true;
 	}, false);
   
@@ -543,9 +563,13 @@ function myMove5() {
 	elem.addEventListener("mouseover", function( event ) {   
 		document.getElementById("folder5").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
-		elem.style.padding = padding;
-		elem.style.borderRadius = borderRadius;
 		elem.style.zIndex = "2";
+		if (xpos > window.innerWidth / 4 * 3) {
+			elem.children[2].style.left = "-105%";
+		}
+		else {
+			elem.children[2].style.left = "175%";
+		}
 		stop = true;
 	}, false);
   

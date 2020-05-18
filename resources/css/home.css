@@ -37,6 +37,7 @@ body {
     height: auto;
     position: absolute;
     padding: 10px 0px;
+    border-radius: 5px;
 }
 
 .tooltiptext {
