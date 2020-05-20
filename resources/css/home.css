@@ -17,26 +17,32 @@ body {
   left: 5%;
   top: 0%;
   width: 20%;
+  z-index: -1;
 }
 
 
 #phone {
   width: 100%;
+  z-index: -1;
 }
 
 #phone-container {
   position: absolute;
-  right: 0%;
+  right: 5%;
   top: 70%;
-  
-  /* width: 10vw; */
   width: 15%;
-  /* width: 820px;
-  height: 100px; */
   overflow: hidden;
+  z-index: -1;
 }
 
-
+#welcome-message {
+  position: absolute;
+  right: 0%;
+  top: 45%;
+  width: 8%;
+  z-index: -1;
+  visibility: hidden;
+}
 
 .img-container {
     align-content: center;
@@ -55,20 +61,21 @@ body {
 #mac {
     position: relative;
     align-content: center;
-    z-index: 0;
+    z-index: -1;
     width: 60%;
 }
 
 .mac-text {
     position: absolute;
     left: 44%;
-    top: 23%;
-    z-index: 1;
-    width: 10%;
+    top: 22.5%;
+    z-index: 0;
+    width: 9.5%;
     text-align: left;
-    font-size: 0.85vw;
+    font-size: 0.725vw;
     font-weight: 800;
     color: rgb(73, 73, 73);
+    line-height: 150%;
 }
 
 .project-names {
@@ -91,7 +98,7 @@ body {
 
 .tooltiptext {
     visibility: hidden;
-    width: 150px;
+    width: 200px;
     background-color: white;
     color: black;
     text-align: center;
@@ -104,7 +111,7 @@ body {
     position: absolute;
     z-index: 1;
     top: 0px;
-    left: 175%;
+    left: 200%;
     margin-left: -60px;
 }
 

@@ -5,8 +5,12 @@ function animate() {
 	myMove3();
 	myMove4();
 	myMove5();
-	setTimeout(type, 3000);
-	setTimeout(rotate, 5000);
+	// computer, then phone	
+	// setTimeout(type, 2000);
+	// setTimeout(animatePhone, 15000);
+	// phone, then computer
+	setTimeout(animatePhone, 2000);
+	setTimeout(type, 5000);
 }
 
 const backgroundColor = "rgba(255, 225, 236, 0.8)";
@@ -14,40 +18,30 @@ const backgroundColor = "rgba(255, 225, 236, 0.8)";
 // const backgroundColor = "rgba(128, 255, 249, 0.78)"
 const padding = "10px 0px";
 const borderRadius = "5px";
-const bottomPadding = 125;
+const bottomPadding = 180;
 const rightPadding = 125;
-const speed = 10;
+// 10 is good
+const speed = 40;
+const tooltipLeft = "175%";
+const tooltipRight = "-155%";
 
-function rotate() {
-	jQuery.fn.rotate = function(degrees) {
-		$(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
-					 '-moz-transform' : 'rotate('+ degrees +'deg)',
-					 '-ms-transform' : 'rotate('+ degrees +'deg)',
-					 'transform' : 'rotate('+ degrees +'deg)'});
-		return $(this);
-	};
-
-	function rotateForward() {
-		$("#phone-container").rotate(20);
-	}	
-	function rotateBackward() {
-		$("#phone-container").rotate(0);
-	}
-
-	let interval = 100;
-
-	for (let i = 1; i < 20; i+=2) {
-		setTimeout(rotateForward, interval * i);
-		setTimeout(rotateBackward, interval * (i + 1));
-	}
+function randomX() {
+	let min = 0;
+	let max = window.innerWidth - 160;
+	return (Math.random() * max) + min;
+}
+function randomY() {
+	let min = 0;
+	let max = window.innerHeight - 160;
+	return (Math.random() * max) + min;
 }
 
 // ttr
 function myMove0() {
 	// console.log(document.getElementsByClassName("icon-container"));
 	var elem = document.getElementById("myAnimation0");
-	var xpos = (Math.random() * window.innerWidth) + 0; // x coordinate of circle
-	var ypos = (Math.random() * window.innerHeight) + 0; // y coordinate of circle
+	var xpos = randomX();// x coordinate of circle
+	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;
 	elem.style.top = ypos;
    
@@ -69,11 +63,11 @@ function myMove0() {
 		document.getElementById("folder0").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
-		if (xpos > window.innerWidth / 4 * 3) {
-			elem.children[2].style.left = "-105%";
+		if (xpos > window.innerWidth / 2) {
+			elem.children[2].style.left = tooltipRight;
 		}
 		else {
-			elem.children[2].style.left = "175%";
+			elem.children[2].style.left = tooltipLeft;
 		}
 		stop = true;
 	}, false);
@@ -150,8 +144,8 @@ function myMove0() {
 // tokitalk
 function myMove1() {
 	var elem = document.getElementById("myAnimation1");
-	var xpos = (Math.random() * window.innerWidth) + 0; // x coordinate of circle
-	var ypos = (Math.random() * window.innerHeight) + 0; // y coordinate of circle
+	var xpos = randomX(); // x coordinate of circle
+	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;
 	elem.style.top = ypos;
    
@@ -173,11 +167,11 @@ function myMove1() {
 		document.getElementById("folder1").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
-		if (xpos > window.innerWidth / 4 * 3) {
-			elem.children[2].style.left = "-105%";
+		if (xpos > window.innerWidth / 2) {
+			elem.children[2].style.left = tooltipRight;
 		}
 		else {
-			elem.children[2].style.left = "175%";
+			elem.children[2].style.left = tooltipLeft;
 		}
 		stop = true;
 	}, false);
@@ -255,8 +249,8 @@ function myMove1() {
 // cloth-sim
 function myMove2() {
 	var elem = document.getElementById("myAnimation2");
-	var xpos = (Math.random() * window.innerWidth) + 0; // x coordinate of circle
-	var ypos = (Math.random() * window.innerHeight) + 0; // y coordinate of circle
+	var xpos = randomX(); // x coordinate of circle
+	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;
 	elem.style.top = ypos;
    
@@ -278,11 +272,11 @@ function myMove2() {
 		document.getElementById("folder2").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
-		if (xpos > window.innerWidth / 4 * 3) {
-			elem.children[2].style.left = "-105%";
+		if (xpos > window.innerWidth / 2) {
+			elem.children[2].style.left = tooltipRight;
 		}
 		else {
-			elem.children[2].style.left = "175%";
+			elem.children[2].style.left = tooltipLeft;
 		}
 		stop = true;
 	}, false);
@@ -360,8 +354,8 @@ function myMove2() {
 // tigerride
 function myMove3() {
 	var elem = document.getElementById("myAnimation3");
-	var xpos = (Math.random() * window.innerWidth) + 0; // x coordinate of circle
-	var ypos = (Math.random() * window.innerHeight) + 0; // y coordinate of circle
+	var xpos = randomX(); // x coordinate of circle
+	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;
 	elem.style.top = ypos;
    
@@ -383,11 +377,11 @@ function myMove3() {
 		document.getElementById("folder3").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
-		if (xpos > window.innerWidth / 4 * 3) {
-			elem.children[2].style.left = "-105%";
+		if (xpos > window.innerWidth / 2) {
+			elem.children[2].style.left = tooltipRight;
 		}
 		else {
-			elem.children[2].style.left = "175%";
+			elem.children[2].style.left = tooltipLeft;
 		}
 		stop = true;
 	}, false);
@@ -465,8 +459,8 @@ function myMove3() {
 // bluetooth
 function myMove4() {
 	var elem = document.getElementById("myAnimation4");
-	var xpos = (Math.random() * window.innerWidth) + 0; // x coordinate of circle
-	var ypos = (Math.random() * window.innerHeight) + 0; // y coordinate of circle
+	var xpos = randomX(); // x coordinate of circle
+	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;
 	elem.style.top = ypos;
    
@@ -488,11 +482,11 @@ function myMove4() {
 		document.getElementById("folder4").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
-		if (xpos > window.innerWidth / 4 * 3) {
-			elem.children[2].style.left = "-105%";
+		if (xpos > window.innerWidth / 2) {
+			elem.children[2].style.left = tooltipRight;
 		}
 		else {
-			elem.children[2].style.left = "175%";
+			elem.children[2].style.left = tooltipLeft;
 		}
 		stop = true;
 	}, false);
@@ -569,8 +563,8 @@ function myMove4() {
 // raytracer
 function myMove5() {
 	var elem = document.getElementById("myAnimation5");
-	var xpos = (Math.random() * window.innerWidth) + 0; // x coordinate of circle
-	var ypos = (Math.random() * window.innerHeight) + 0; // y coordinate of circle
+	var xpos = randomX(); // x coordinate of circle
+	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;
 	elem.style.top = ypos;
    
@@ -592,11 +586,11 @@ function myMove5() {
 		document.getElementById("folder5").src = "resources/images/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
-		if (xpos > window.innerWidth / 4 * 3) {
-			elem.children[2].style.left = "-105%";
+		if (xpos > window.innerWidth / 2) {
+			elem.children[2].style.left = tooltipRight;
 		}
 		else {
-			elem.children[2].style.left = "175%";
+			elem.children[2].style.left = tooltipLeft;
 		}
 		stop = true;
 	}, false);
