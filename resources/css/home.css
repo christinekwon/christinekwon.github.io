@@ -12,10 +12,36 @@ body {
     height: auto;
 }
 
+#mirror {
+  position: absolute;
+  left: 5%;
+  top: 0%;
+  width: 20%;
+}
+
+
+#phone {
+  width: 100%;
+}
+
+#phone-container {
+  position: absolute;
+  right: 0%;
+  top: 70%;
+  
+  /* width: 10vw; */
+  width: 15%;
+  /* width: 820px;
+  height: 100px; */
+  overflow: hidden;
+}
+
+
+
 .img-container {
     align-content: center;
     text-align: center;
-    width: 40vw;
+    width: 70vw;
     height: auto;
     margin-top: 25vh;
     margin-bottom: auto;
@@ -30,17 +56,17 @@ body {
     position: relative;
     align-content: center;
     z-index: 0;
-    width: 100%;
+    width: 60%;
 }
 
 .mac-text {
     position: absolute;
-    left: 40%;
+    left: 44%;
     top: 23%;
     z-index: 1;
-    width: 15%;
+    width: 10%;
     text-align: left;
-    font-size: 0.75vw;
+    font-size: 0.85vw;
     font-weight: 800;
     color: rgb(73, 73, 73);
 }

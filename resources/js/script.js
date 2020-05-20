@@ -5,6 +5,8 @@ function animate() {
 	myMove3();
 	myMove4();
 	myMove5();
+	setTimeout(type, 3000);
+	setTimeout(rotate, 5000);
 }
 
 const backgroundColor = "rgba(255, 225, 236, 0.8)";
@@ -15,6 +17,30 @@ const borderRadius = "5px";
 const bottomPadding = 125;
 const rightPadding = 125;
 const speed = 10;
+
+function rotate() {
+	jQuery.fn.rotate = function(degrees) {
+		$(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
+					 '-moz-transform' : 'rotate('+ degrees +'deg)',
+					 '-ms-transform' : 'rotate('+ degrees +'deg)',
+					 'transform' : 'rotate('+ degrees +'deg)'});
+		return $(this);
+	};
+
+	function rotateForward() {
+		$("#phone-container").rotate(20);
+	}	
+	function rotateBackward() {
+		$("#phone-container").rotate(0);
+	}
+
+	let interval = 100;
+
+	for (let i = 1; i < 20; i+=2) {
+		setTimeout(rotateForward, interval * i);
+		setTimeout(rotateBackward, interval * (i + 1));
+	}
+}
 
 // ttr
 function myMove0() {
