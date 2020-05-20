@@ -1,15 +1,65 @@
 html {
     /*background: blue;*/
-    background: black;
-    color: white;
-    cursor: url('../images/cursor.png'), auto; 
+    background: white;
+    color: black;
+    /* cursor: url('../images/cursor.png'), auto;  */
 }
 
-.buttons {
-    margin: 5%;
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 10% auto;
 }
 
-@media screen and (min-width: 601px) {
+h1 {
+    color: rgb(153, 168, 255);
+    font-weight: 700;
+    font-size: 20px;
+    margin: 2%;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+p {
+    width: 66vw;
+    margin: 0% auto;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 175%;
+}
+
+img {
+    box-shadow: 2px 2px 5px 2px grey;
+}
+
+.square-image {
+    width: 33vw;
+    border-radius: 1vw;
+    margin: 5% auto;
+    display: block;
+}
+
+.wide-image {
+    width: 50vw;
+    border-radius: 1vw;
+    margin: 5% auto;
+    display: block;
+}
+
+.img-container {
+    display: block;
+    width: 66vw;
+    margin: 5% auto;
+}
+
+.narrow-image {
+    display: inline-block;
+    width: 30%;
+    margin: 0% 1%;
+    border-radius: 1vw;
+}
+
+/* @media screen and (min-width: 601px) {
     .title {
         background: transparent;
         border: none;
@@ -21,7 +71,6 @@ html {
     }
   }
   
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
   @media screen and (max-width: 600px) {
     .title {
         background: transparent;
@@ -33,51 +82,12 @@ html {
         margin-bottom: 70px;
 
     }
-  }
+  } */
 
-.title {
-    background: transparent;
-    border: none;
-    color: white;
-    font-weight: 900;
-    font-size: 7vw;
-    /*text-shadow: 0.2vw 0.2vw 0.2vw white;*/
-    margin: 30px;
-    
-}
+
 
 .name:hover {
     color: red;
     cursor: url('../images/cursor.png'), auto; 
 
 }
-
-.web {
-    width: 80%;
-    display: block;
-    margin: 5% auto;
-}
-
-.mobile {
-    display: inline-block;
-    width: 17%;
-    margin: 5% 1%;
-}
-
-p {
-    font-family: 'Roboto Mono', monospace;
-    width: 80%;
-    margin: 5% auto;
-    text-align: left;
-    font-size: 16px;
-}
-
-/*h1 {
-    background: transparent;
-    border: none;
-    color: white;
-    font-weight: 900;
-    font-size: 5vw;
-    text-shadow: 0.3vw 0.3vw 0.5vw black;
-    margin: 10px;
-}*/
