@@ -31,7 +31,7 @@ function myMove0() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder0").src = "resources/images/folder-open.png";
+		document.getElementById("folder0").src = "resources/images/home/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
@@ -45,7 +45,7 @@ function myMove0() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder0").src = "resources/images/folder-closed.png";
+		document.getElementById("folder0").src = "resources/images/home/folder-closed.png";
 		elem.style.backgroundColor = "transparent";
 		elem.style.zIndex = "1";
 		stop = false;
@@ -135,7 +135,7 @@ function myMove1() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder1").src = "resources/images/folder-open.png";
+		document.getElementById("folder1").src = "resources/images/home/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
@@ -149,7 +149,7 @@ function myMove1() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder1").src = "resources/images/folder-closed.png";
+		document.getElementById("folder1").src = "resources/images/home/folder-closed.png";
 		elem.style.backgroundColor = "transparent";
 		elem.style.zIndex = "1";
 		stop = false;
@@ -240,7 +240,7 @@ function myMove2() {
 
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder2").src = "resources/images/folder-open.png";
+		document.getElementById("folder2").src = "resources/images/home/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
@@ -254,7 +254,7 @@ function myMove2() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder2").src = "resources/images/folder-closed.png";
+		document.getElementById("folder2").src = "resources/images/home/folder-closed.png";
 		elem.style.backgroundColor = "transparent";
 		elem.style.zIndex = "1";		
 		stop = false;
@@ -345,7 +345,7 @@ function myMove3() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder3").src = "resources/images/folder-open.png";
+		document.getElementById("folder3").src = "resources/images/home/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
@@ -359,7 +359,7 @@ function myMove3() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder3").src = "resources/images/folder-closed.png";
+		document.getElementById("folder3").src = "resources/images/home/folder-closed.png";
 		elem.style.backgroundColor = "transparent";
 		elem.style.zIndex = "1";
 		stop = false;
@@ -450,7 +450,7 @@ function myMove4() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder4").src = "resources/images/folder-open.png";
+		document.getElementById("folder4").src = "resources/images/home/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
@@ -464,7 +464,7 @@ function myMove4() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder4").src = "resources/images/folder-closed.png";
+		document.getElementById("folder4").src = "resources/images/home/folder-closed.png";
 		elem.style.backgroundColor = "transparent";
 		elem.style.zIndex = "1";		
 		stop = false;
@@ -554,7 +554,7 @@ function myMove5() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder5").src = "resources/images/folder-open.png";
+		document.getElementById("folder5").src = "resources/images/home/folder-open.png";
 		elem.style.backgroundColor = backgroundColor;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
@@ -568,7 +568,7 @@ function myMove5() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder5").src = "resources/images/folder-closed.png";
+		document.getElementById("folder5").src = "resources/images/home/folder-closed.png";
 		elem.style.backgroundColor = "transparent";
 		elem.style.zIndex = "1";		
 		stop = false;

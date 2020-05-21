@@ -26,16 +26,16 @@ const tooltipRight = "-155%";
 const cs_link0 = "https://belle-chang.github.io/type-type-revenge";
 
 // tokitalk
-const cs_link1 = "tokitalk.html";
+const cs_link1 = "pages/tokitalk.html";
 
 // cloth simulation
 const cs_link2 = "cloth-sim";
 
 //tigerride
-const cs_link3 = "tigerride.html";
+const cs_link3 = "pages/tigerride.html";
 
 // bluetooth app
-const cs_link4 = "bluetooth.html";
+const cs_link4 = "pages/bluetooth.html";
 
 // raytracer
 const cs_link5 = "raytracer";
