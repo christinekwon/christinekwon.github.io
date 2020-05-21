@@ -1,3 +1,12 @@
+function cs_animate() {
+    myMove0();
+	myMove1();
+	myMove2();
+	myMove3();
+	myMove4();
+	myMove5();
+}
+
 // ttr
 function myMove0() {
 	// console.log(document.getElementsByClassName("icon-container"));
@@ -17,7 +26,7 @@ function myMove0() {
 
 	elem.onclick = function (e) {
 		let name = e.target.name;
-		location.href = "https://belle-chang.github.io/type-type-revenge";
+		location.href = cs_link0;
 	}
   
 	// when mouse hovers over circle, it expands and stops
@@ -121,7 +130,7 @@ function myMove1() {
 
 	elem.onclick = function (e) {
 		let name = e.target.name;
-		location.href = name + '.html';
+		location.href = cs_link1;
 	}
   
 	// when mouse hovers over circle, it expands and stops
@@ -226,7 +235,7 @@ function myMove2() {
 
 	elem.onclick = function (e) {
 		let name = e.target.name;
-		location.href = 'cloth-sim';
+		location.href = cs_link2;
 	}
 
 	// when mouse hovers over circle, it expands and stops
@@ -331,7 +340,7 @@ function myMove3() {
 
 	elem.onclick = function (e) {
 		let name = e.target.name;
-		location.href = name + '.html';
+		location.href = cs_link3;
 	}
   
 	// when mouse hovers over circle, it expands and stops
@@ -436,7 +445,7 @@ function myMove4() {
 
 	elem.onclick = function (e) {
 		let name = e.target.name;
-		location.href = name + '.html';
+		location.href = cs_link4;
 	}
   
 	// when mouse hovers over circle, it expands and stops
@@ -540,7 +549,7 @@ function myMove5() {
 
 	elem.onclick = function (e) {
 		let name = e.target.name;
-		location.href = 'raytracer';
+		location.href = cs_link5;
 	}
   
 	// when mouse hovers over circle, it expands and stops

@@ -1,10 +1,5 @@
 function animate() {
-	myMove0();
-	myMove1();
-	myMove2();
-	myMove3();
-	myMove4();
-	myMove5();
+	cs_animate();
 	
 	// phone, then computer
 	setTimeout(animatePhone, 2000);
@@ -26,6 +21,42 @@ const rightPadding = 125;
 const speed = 10;
 const tooltipLeft = "175%";
 const tooltipRight = "-155%";
+
+// ttr
+const cs_link0 = "https://belle-chang.github.io/type-type-revenge";
+
+// tokitalk
+const cs_link1 = "tokitalk.html";
+
+// cloth simulation
+const cs_link2 = "cloth-sim";
+
+//tigerride
+const cs_link3 = "tigerride.html";
+
+// bluetooth app
+const cs_link4 = "bluetooth.html";
+
+// raytracer
+const cs_link5 = "raytracer";
+
+// junior iw
+const cs_link6 = "";
+
+// l-system
+const cd_link0 = "";
+
+// shape grammar
+const cd_link1 = "";
+
+// cellular automata
+const cd_link2 = "";
+
+// hackprinceton
+const design_link0 = "";
+
+// illustrations
+const design_link1 = "";
 
 function randomX() {
 	let min = 0;
