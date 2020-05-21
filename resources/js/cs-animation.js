@@ -1,16 +1,16 @@
 function cs_animate() {
-    myMove0();
-	myMove1();
-	myMove2();
-	myMove3();
-	myMove4();
-	myMove5();
+    csMove0();
+	csMove1();
+	csMove2();
+	csMove3();
+	csMove4();
+	csMove5();
 }
 
 // ttr
-function myMove0() {
+function csMove0() {
 	// console.log(document.getElementsByClassName("icon-container"));
-	var elem = document.getElementById("myAnimation0");
+	var elem = document.getElementById("csAnimation0");
 	var xpos = randomX();// x coordinate of circle
 	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;
@@ -113,8 +113,8 @@ function myMove0() {
 }
 
 // tokitalk
-function myMove1() {
-	var elem = document.getElementById("myAnimation1");
+function csMove1() {
+	var elem = document.getElementById("csAnimation1");
 	var xpos = randomX(); // x coordinate of circle
 	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;
@@ -218,8 +218,8 @@ function myMove1() {
 
 
 // cloth-sim
-function myMove2() {
-	var elem = document.getElementById("myAnimation2");
+function csMove2() {
+	var elem = document.getElementById("csAnimation2");
 	var xpos = randomX(); // x coordinate of circle
 	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;
@@ -323,8 +323,8 @@ function myMove2() {
 
 
 // tigerride
-function myMove3() {
-	var elem = document.getElementById("myAnimation3");
+function csMove3() {
+	var elem = document.getElementById("csAnimation3");
 	var xpos = randomX(); // x coordinate of circle
 	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;
@@ -428,8 +428,8 @@ function myMove3() {
 
 
 // bluetooth
-function myMove4() {
-	var elem = document.getElementById("myAnimation4");
+function csMove4() {
+	var elem = document.getElementById("csAnimation4");
 	var xpos = randomX(); // x coordinate of circle
 	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;
@@ -532,8 +532,8 @@ function myMove4() {
 }
 
 // raytracer
-function myMove5() {
-	var elem = document.getElementById("myAnimation5");
+function csMove5() {
+	var elem = document.getElementById("csAnimation5");
 	var xpos = randomX(); // x coordinate of circle
 	var ypos = randomY(); // y coordinate of circle
 	elem.style.left = xpos;

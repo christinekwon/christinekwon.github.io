@@ -1,5 +1,7 @@
 function animate() {
 	cs_animate();
+	cd_animate();
+	design_animate();
 	
 	// phone, then computer
 	setTimeout(animatePhone, 2000);
@@ -18,7 +20,7 @@ const borderRadius = "5px";
 const bottomPadding = 180;
 const rightPadding = 125;
 // 10 is fast enough, 40 is slow enough
-const speed = 30;
+const speed = 20;
 const tooltipLeft = "175%";
 const tooltipRight = "-155%";
 
@@ -41,22 +43,25 @@ const cs_link4 = "pages/bluetooth.html";
 const cs_link5 = "raytracer";
 
 // junior iw
-const cs_link6 = "";
+const cs_link6 = "pages/iw.html";
 
 // l-system
-const cd_link0 = "";
+const cd_link0 = "pages/l-system.html";
 
 // shape grammar
-const cd_link1 = "";
+const cd_link1 = "pages/shape-grammar.html";
 
 // cellular automata
-const cd_link2 = "";
+const cd_link2 = "pages/cellular-automata.html";
 
 // hackprinceton
-const design_link0 = "";
+const design_link0 = "pages/hackprinceton.html";
 
 // illustrations
-const design_link1 = "";
+const design_link1 = "pages/designs.html";
+
+// posters
+const design_link2 = "pages/posters.html";
 
 function randomX() {
 	let min = 0;

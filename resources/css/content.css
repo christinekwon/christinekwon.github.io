@@ -42,6 +42,10 @@ p {
     line-height: 175%;
 }
 
+.link {
+    color: rgb(90, 114, 253);
+}
+
 /* img {
     box-shadow: 2px 2px 5px 2px grey;
 } */
@@ -75,6 +79,17 @@ p {
     width: 27%;
     margin: 0% 1%;
     /* border-radius: 1vw; */
+}
+
+.poster {
+    max-width: 500px;
+    width: 66.7%;
+    margin: 5% auto;
+    display: block;
+}
+
+iframe {
+    margin: 5% auto;
 }
 
 /* @media screen and (min-width: 601px) {
