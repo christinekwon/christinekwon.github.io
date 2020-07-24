@@ -1,7 +1,7 @@
 function design_animate() {
     designMove0();
-	designMove1();
-	designMove2();
+	// designMove1();
+	// designMove2();
 }
 // l-system
 function designMove0() {
@@ -21,8 +21,8 @@ function designMove0() {
 	}
   
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder0").src = "resources/images/home/folder-open.png";
-		elem.style.backgroundColor = backgroundColor;
+		document.getElementById("design-folder0").src = "resources/images/home/folder-open.png";
+		elem.style.backgroundColor = backgroundColor1;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
 			elem.children[2].style.left = tooltipRight;
@@ -34,8 +34,8 @@ function designMove0() {
 	}, false);
   
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder0").src = "resources/images/home/folder-closed.png";
-		elem.style.backgroundColor = "transparent";
+		document.getElementById("design-folder0").src = "resources/images/home/folder-closed.png";
+		elem.style.backgroundColor = backgroundColor0;
 		elem.style.zIndex = "1";
 		stop = false;
 	}, false);
@@ -109,8 +109,8 @@ function designMove1() {
 	}
   
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder1").src = "resources/images/home/folder-open.png";
-		elem.style.backgroundColor = backgroundColor;
+		document.getElementById("design-folder1").src = "resources/images/home/folder-open.png";
+		elem.style.backgroundColor = backgroundColor1;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
 			elem.children[2].style.left = tooltipRight;
@@ -122,8 +122,8 @@ function designMove1() {
 	}, false);
   
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder1").src = "resources/images/home/folder-closed.png";
-		elem.style.backgroundColor = "transparent";
+		document.getElementById("design-folder1").src = "resources/images/home/folder-closed.png";
+		elem.style.backgroundColor = backgroundColor0;
 		elem.style.zIndex = "1";
 		stop = false;
 	}, false);
@@ -198,8 +198,8 @@ function designMove2() {
 	}
 
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder2").src = "resources/images/home/folder-open.png";
-		elem.style.backgroundColor = backgroundColor;
+		document.getElementById("design-folder2").src = "resources/images/home/folder-open.png";
+		elem.style.backgroundColor = backgroundColor1;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
 			elem.children[2].style.left = tooltipRight;
@@ -211,8 +211,8 @@ function designMove2() {
 	}, false);
   
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder2").src = "resources/images/home/folder-closed.png";
-		elem.style.backgroundColor = "transparent";
+		document.getElementById("design-folder2").src = "resources/images/home/folder-closed.png";
+		elem.style.backgroundColor = backgroundColor0;
 		elem.style.zIndex = "1";		
 		stop = false;
 	}, false);

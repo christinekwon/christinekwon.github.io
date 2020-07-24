@@ -12,7 +12,8 @@ function animate() {
 	// setTimeout(animatePhone, 15000);
 }
 
-const backgroundColor = "rgba(255, 225, 236, 0.8)";
+const backgroundColor0 = "rgba(255, 225, 236, 0.3)";
+const backgroundColor1 = "rgba(255, 225, 236, 0.8)";
 // const backgroundColor = "transparent";
 // const backgroundColor = "rgba(128, 255, 249, 0.78)"
 const padding = "10px 0px";
@@ -42,11 +43,13 @@ const cs_link4 = "pages/bluetooth.html";
 // raytracer
 const cs_link5 = "raytracer";
 
+// baby piano
+const cs_link6 = "baby-piano";
+
 // junior iw
-const cs_link6 = "pages/iw.html";
 
 // l-system
-const cd_link0 = "pages/l-system.html";
+const cd_link0 = "pages/cd.html";
 
 // shape grammar
 const cd_link1 = "pages/shape-grammar.html";
@@ -55,7 +58,8 @@ const cd_link1 = "pages/shape-grammar.html";
 const cd_link2 = "pages/cellular-automata.html";
 
 // hackprinceton
-const design_link0 = "pages/hackprinceton.html";
+// const design_link0 = "pages/hackprinceton.html";
+const design_link0 = "pages/graphic-design.html";
 
 // illustrations
 const design_link1 = "pages/designs.html";

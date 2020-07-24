@@ -229,7 +229,7 @@ body {
 }
 
 .icon-container {
-    background: transparent;
+    background: rgba(255, 225, 236, 0.3);
     text-align: center;
     visibility: hidden;
     width: 100px;
@@ -237,10 +237,14 @@ body {
     position: absolute;
     padding: 15px 0px;
     border-radius: 5px;
+
+    -webkit-transition: .3s;
+		transition: background .3s;
 }
 
 .tooltiptext {
-    visibility: hidden;
+    /* visibility: hidden; */
+    opacity: 0;
     width: 200px;
     background-color: white;
     color: black;
@@ -256,10 +260,16 @@ body {
     top: 0px;
     left: 200%;
     margin-left: -60px;
+
+    -webkit-transition: 0.3s;
+		transition: opacity 0.3s;
 }
 
 .icon-container:hover .tooltiptext {
-    visibility: visible;   
+    /* visibility: visible;    */
+    opacity: 1;
+    -webkit-transition: 0.3s;
+		transition: opacity 0.3s;
 }
 
 /* @media screen and (min-width: 601px) {

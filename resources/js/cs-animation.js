@@ -5,6 +5,7 @@ function cs_animate() {
 	csMove3();
 	csMove4();
 	csMove5();
+	csMove6();
 }
 
 // ttr
@@ -31,8 +32,8 @@ function csMove0() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder0").src = "resources/images/home/folder-open.png";
-		elem.style.backgroundColor = backgroundColor;
+		document.getElementById("cs-folder0").src = "resources/images/home/folder-open.png";
+		elem.style.backgroundColor = backgroundColor1;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
 			elem.children[2].style.left = tooltipRight;
@@ -45,8 +46,8 @@ function csMove0() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder0").src = "resources/images/home/folder-closed.png";
-		elem.style.backgroundColor = "transparent";
+		document.getElementById("cs-folder0").src = "resources/images/home/folder-closed.png";
+		elem.style.backgroundColor = backgroundColor0;
 		elem.style.zIndex = "1";
 		stop = false;
 	}, false);
@@ -135,8 +136,8 @@ function csMove1() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder1").src = "resources/images/home/folder-open.png";
-		elem.style.backgroundColor = backgroundColor;
+		document.getElementById("cs-folder1").src = "resources/images/home/folder-open.png";
+		elem.style.backgroundColor = backgroundColor1;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
 			elem.children[2].style.left = tooltipRight;
@@ -149,8 +150,8 @@ function csMove1() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder1").src = "resources/images/home/folder-closed.png";
-		elem.style.backgroundColor = "transparent";
+		document.getElementById("cs-folder1").src = "resources/images/home/folder-closed.png";
+		elem.style.backgroundColor = backgroundColor0;
 		elem.style.zIndex = "1";
 		stop = false;
 	}, false);
@@ -240,8 +241,8 @@ function csMove2() {
 
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder2").src = "resources/images/home/folder-open.png";
-		elem.style.backgroundColor = backgroundColor;
+		document.getElementById("cs-folder2").src = "resources/images/home/folder-open.png";
+		elem.style.backgroundColor = backgroundColor1;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
 			elem.children[2].style.left = tooltipRight;
@@ -254,8 +255,8 @@ function csMove2() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder2").src = "resources/images/home/folder-closed.png";
-		elem.style.backgroundColor = "transparent";
+		document.getElementById("cs-folder2").src = "resources/images/home/folder-closed.png";
+		elem.style.backgroundColor = backgroundColor0;
 		elem.style.zIndex = "1";		
 		stop = false;
 	}, false);
@@ -345,8 +346,8 @@ function csMove3() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder3").src = "resources/images/home/folder-open.png";
-		elem.style.backgroundColor = backgroundColor;
+		document.getElementById("cs-folder3").src = "resources/images/home/folder-open.png";
+		elem.style.backgroundColor = backgroundColor1;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
 			elem.children[2].style.left = tooltipRight;
@@ -359,8 +360,8 @@ function csMove3() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder3").src = "resources/images/home/folder-closed.png";
-		elem.style.backgroundColor = "transparent";
+		document.getElementById("cs-folder3").src = "resources/images/home/folder-closed.png";
+		elem.style.backgroundColor = backgroundColor0;
 		elem.style.zIndex = "1";
 		stop = false;
 	}, false);
@@ -450,8 +451,8 @@ function csMove4() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder4").src = "resources/images/home/folder-open.png";
-		elem.style.backgroundColor = backgroundColor;
+		document.getElementById("cs-folder4").src = "resources/images/home/folder-open.png";
+		elem.style.backgroundColor = backgroundColor1;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
 			elem.children[2].style.left = tooltipRight;
@@ -464,8 +465,8 @@ function csMove4() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder4").src = "resources/images/home/folder-closed.png";
-		elem.style.backgroundColor = "transparent";
+		document.getElementById("cs-folder4").src = "resources/images/home/folder-closed.png";
+		elem.style.backgroundColor = backgroundColor0;
 		elem.style.zIndex = "1";		
 		stop = false;
 	}, false);
@@ -554,8 +555,8 @@ function csMove5() {
   
 	// when mouse hovers over circle, it expands and stops
 	elem.addEventListener("mouseover", function( event ) {   
-		document.getElementById("folder5").src = "resources/images/home/folder-open.png";
-		elem.style.backgroundColor = backgroundColor;
+		document.getElementById("cs-folder5").src = "resources/images/home/folder-open.png";
+		elem.style.backgroundColor = backgroundColor1;
 		elem.style.zIndex = "2";
 		if (xpos > window.innerWidth / 2) {
 			elem.children[2].style.left = tooltipRight;
@@ -568,8 +569,112 @@ function csMove5() {
   
 	// when mouse is stops hovering over circle, go back go original size && continue moving
 	elem.addEventListener("mouseout", function( event ) {   
-		document.getElementById("folder5").src = "resources/images/home/folder-closed.png";
-		elem.style.backgroundColor = "transparent";
+		document.getElementById("cs-folder5").src = "resources/images/home/folder-closed.png";
+		elem.style.backgroundColor = backgroundColor0;
+		elem.style.zIndex = "1";		
+		stop = false;
+	}, false);
+
+	// calculate location change every 10 milliseconds by calling frame() function
+	setInterval(frame, speed);
+  
+ 	function frame() {
+		elem.style.visibility = "visible";
+	  	// only execute script if the mouse is not hovering over the circle
+		if (!stop) {
+			// when circle reaches bottom edge of window, bounce back
+			if (ypos >= window.innerHeight - bottomPadding) {
+				y_increasing = false;
+				ypos--;
+				elem.style.top = ypos + 'px'; 
+			}
+			// when circle reaches top edge of window, bounce back
+			else if (ypos <= 0) {
+				y_increasing = true;
+				ypos++;
+				elem.style.top = ypos + 'px'; 
+			}
+			// if circle is floating in the middle of the screen, increment
+			// its y position according to the y_increasing flag
+			else {
+				if (y_increasing) {
+					ypos++;
+					elem.style.top = ypos + 'px'; 
+				}
+				else {
+					ypos--;
+					elem.style.top = ypos + 'px'; 
+				}
+			}
+	
+			// when circle reaches right edge of window, bounce back
+			if (xpos >= window.innerWidth - rightPadding) {
+				x_increasing = false;
+				xpos--;
+				elem.style.left = xpos + 'px'; 
+			}
+			// when circle reaches left edge of window, bounce back
+			else if (xpos <= 0) {
+				x_increasing = true;
+				xpos++; 
+				elem.style.left = xpos + 'px'; 
+			}
+			// if circle is floating in the middle of the screen, increment
+			// its x position according to the x_increasing flag
+			else {
+				if (x_increasing) {
+					xpos++;
+					elem.style.left = xpos + 'px'; 
+				}
+				else {
+					xpos--;
+					elem.style.left = xpos + 'px'; 
+				}
+			}
+		}
+	
+	}
+}
+
+// baby piano
+function csMove6() {
+	var elem = document.getElementById("csAnimation6");
+	var xpos = randomX(); // x coordinate of circle
+	var ypos = randomY(); // y coordinate of circle
+	elem.style.left = xpos;
+	elem.style.top = ypos;
+   
+	// flag; true means circle is moving l --> r, false means r --> l
+	var x_increasing = Math.random() >= 0.5; 
+	// flag; true means circle is moving top -- > bottom, false means bottom --> top
+	var y_increasing = Math.random() >= 0.5; 
+	
+	// true = circle is stopped, false = circle is moving
+	var stop = false;
+
+	elem.onclick = function (e) {
+		let name = e.target.name;
+		location.href = cs_link5;
+	}
+  
+	// when mouse hovers over circle, it expands and stops
+	elem.addEventListener("mouseover", function( event ) {   
+		document.getElementById("cs-folder6").src = "resources/images/home/folder-open.png";
+		elem.style.backgroundColor = backgroundColor1;
+		elem.style.zIndex = "2";
+		if (xpos > window.innerWidth / 2) {
+			elem.children[2].style.left = tooltipRight;
+		}
+		else {
+			elem.children[2].style.left = tooltipLeft;
+		}
+		stop = true;
+	}, false);
+  
+	// when mouse is stops hovering over circle, go back go original size && continue moving
+	elem.addEventListener("mouseout", function( event ) {   
+		document.getElementById("cs-folder6").src = "resources/images/home/folder-closed.png";
+		elem.style.backgroundColor = backgroundColor0;
 		elem.style.zIndex = "1";		
 		stop = false;
 	}, false);
