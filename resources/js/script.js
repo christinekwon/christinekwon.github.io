@@ -46,6 +46,9 @@ const cs_link5 = "raytracer";
 // baby piano
 const cs_link6 = "baby-piano";
 
+// rhythm cooker
+const cs_link7 = "rhythm-cooker";
+
 // junior iw
 
 // l-system
