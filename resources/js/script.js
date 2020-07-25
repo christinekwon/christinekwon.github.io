@@ -7,6 +7,8 @@ function animate() {
 	setTimeout(animatePhone, 2000);
 	setTimeout(type, 5000);
 
+
+
 	// computer, then phone	
 	// setTimeout(type, 2000);
 	// setTimeout(animatePhone, 15000);
@@ -80,3 +82,24 @@ function randomY() {
 	let max = window.innerHeight - 160;
 	return (Math.random() * max) + min;
 }
+
+function aboutMe() {
+	location.href = "pages/me.html";
+}
+
+var mirror = document.getElementById("mirror");
+
+mirror.addEventListener("mouseover", function( event ) {   
+	mirror.style.zIndex = "2";
+	// mirror.style.top = "-5%";
+	mirror.style.transform ="rotate(360deg)";
+}, false);
+
+// when mouse is stops hovering over circle, go back go original size && continue moving
+mirror.addEventListener("mouseout", function( event ) {   
+	mirror.style.zIndex = "0";
+	// mirror.style.top = "0%";
+
+	mirror.style.transform ="rotate(0)";
+
+}, false);

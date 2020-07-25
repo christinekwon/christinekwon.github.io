@@ -48,10 +48,16 @@ body {
 
   #mirror {
     position: absolute;
-    left: 5%;
+    /* right: 27%;
+    top: 30%;
+    width: 8%; */
+    z-index: 0;
+    left: 15%;
     top: 0%;
-    width: 20%;
-    z-index: -1;
+    width: 13%;
+
+    -webkit-transition: 1s;
+		transition: transform 1s;
   }
 
 
@@ -118,13 +124,6 @@ body {
     height: auto;
   }
 
-  #mirror {
-    position: absolute;
-    left: 5%;
-    top: 0%;
-    width: 20%;
-    z-index: -1;
-  }
 
   #phone-container {
     position: absolute;
@@ -256,7 +255,7 @@ body {
 
     /* Position the tooltip */
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 0px;
     left: 200%;
     margin-left: -60px;

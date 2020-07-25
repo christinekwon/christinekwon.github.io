@@ -1,5 +1,5 @@
 function cs_animate() {
-    csMove0();
+    // csMove0();
 	csMove1();
 	csMove2();
 	csMove3();
