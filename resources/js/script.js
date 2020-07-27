@@ -1,13 +1,9 @@
-function animate() {
-	cs_animate();
-	cd_animate();
-	design_animate();
+function start() {
+	animate();
 	
 	// phone, then computer
 	setTimeout(animatePhone, 2000);
 	setTimeout(type, 5000);
-
-
 
 	// computer, then phone	
 	// setTimeout(type, 2000);
@@ -23,7 +19,7 @@ const borderRadius = "5px";
 const bottomPadding = 180;
 const rightPadding = 125;
 // 10 is fast enough, 40 is slow enough
-const speed = 40;
+const speed = 10;
 const tooltipLeft = "175%";
 const tooltipRight = "-155%";
 
@@ -87,19 +83,3 @@ function aboutMe() {
 	location.href = "pages/me.html";
 }
 
-var mirror = document.getElementById("mirror");
-
-mirror.addEventListener("mouseover", function( event ) {   
-	mirror.style.zIndex = "2";
-	// mirror.style.top = "-5%";
-	mirror.style.transform ="rotate(360deg)";
-}, false);
-
-// when mouse is stops hovering over circle, go back go original size && continue moving
-mirror.addEventListener("mouseout", function( event ) {   
-	mirror.style.zIndex = "0";
-	// mirror.style.top = "0%";
-
-	mirror.style.transform ="rotate(0)";
-
-}, false);

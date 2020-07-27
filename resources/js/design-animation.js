@@ -1,5 +1,5 @@
 function design_animate() {
-    designMove0();
+    // designMove0();
 	// designMove1();
 	// designMove2();
 }

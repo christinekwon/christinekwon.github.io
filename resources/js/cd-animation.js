@@ -1,5 +1,5 @@
 function cd_animate() {
-    cdMove0();
+    // cdMove0();
 	// cdMove1();
 	// cdMove2();
 }
