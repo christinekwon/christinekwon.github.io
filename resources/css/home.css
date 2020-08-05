@@ -46,6 +46,7 @@ html:after {
   display:flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .loader {
@@ -102,7 +103,7 @@ html:after {
     left: 15vw;
     top: 15vh;
     width: 15%;
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
 
     /* background-color: red; */
     align-content: center;
@@ -119,7 +120,7 @@ html:after {
   }
 
   #art-container:hover {
-    transform: rotate(-1090deg);
+    transform: rotate(-1085deg);
     z-index: 5;
 
     -webkit-transition: 1s;
