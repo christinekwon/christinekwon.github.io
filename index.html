@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="resources/css/base.css">
 		<link rel="stylesheet" href="resources/css/home.css">
+		<link rel="stylesheet" href="resources/css/home-mobile.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
 		<link rel="shortcut icon" type="image/png" href="resources/images/icons/favicon.png"/>
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -17,11 +18,25 @@
 	</head>
 
 	<body onload="start()">
+		<div class="loader-wrapper">
+			<!-- <span class="loader"><span class="loader-inner"></span></span> -->
+			<span class="loader"><span class="loader-inner">loading...</span></span>
+		</div>
+		<div id="art-container">
+			<img id="art" src="resources/images/home/tuxedo.jpg" onclick="return art();">
+		</div>
 		<div class="img-container">
 			<img id="mac" src="resources/images/home/mac-white.png">
 			<span class="mac-text"></span>
+			<div id="troll-container">
+				<img id="troll" src="resources/images/home/troll.png">
+			</div>
+			<div id="coke-container" href="pages/me.html">
+				<img id="coke1" src="resources/images/home/coke.png" onclick="return aboutMe();">
+				<img id="coke2" src="resources/images/home/coke.png" onclick="return aboutMe();">
+			</div>
 			<div id="mirror-container" href="pages/me.html">
-				<div id="me-text">wanna learn more about me?</div>
+				<div id="me-text">about me ~</div>
 				<img id="mirror" src="resources/images/home/mirror.png" onclick="return aboutMe();">
 			</div>
 			<img id="welcome-message" src="resources/images/home/welcome-message.png">

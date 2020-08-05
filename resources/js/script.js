@@ -4,11 +4,21 @@ function start() {
 	// phone, then computer
 	setTimeout(animatePhone, 2000);
 	setTimeout(type, 5000);
+	
+
+	// var titles = document.getElementsByClassName("project-names");
+	// for (let i = 0; i < titles.length; i++) {
+	// 	document.getElementsByClassName("project-names")[i].innerHTML = "a project ~";
+	// }
 
 	// computer, then phone	
 	// setTimeout(type, 2000);
 	// setTimeout(animatePhone, 15000);
 }
+
+$(window).on("load",function(){
+	$(".loader-wrapper").fadeOut("slow");
+});
 
 const backgroundColor0 = "rgba(255, 225, 236, 0.3)";
 const backgroundColor1 = "rgba(255, 225, 236, 0.8)";
@@ -19,7 +29,7 @@ const borderRadius = "5px";
 const bottomPadding = 180;
 const rightPadding = 125;
 // 10 is fast enough, 40 is slow enough
-const speed = 10;
+const speed = 20;
 const tooltipLeft = "175%";
 const tooltipRight = "-155%";
 
@@ -81,5 +91,9 @@ function randomY() {
 
 function aboutMe() {
 	location.href = "pages/me.html";
+}
+
+function art() {
+	location.href = "https://gagosian.com/quarterly/2019/01/25/essay-jean-michel-basquiat-black-and-white/";
 }
 

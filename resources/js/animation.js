@@ -4,8 +4,9 @@ function animate() {
 	move("cs-Animation-2", cs_link2);
 	move("cs-Animation-3", cs_link3);
 	move("cs-Animation-4", cs_link4);
-	move("cs-Animation-5", cs_link5);
+	// move("cs-Animation-5", cs_link5);
 	move("cs-Animation-6", cs_link6);
+	move("cs-Animation-7", cs_link7);
 
 	move("cd-Animation-0", cd_link0);
 	
@@ -16,16 +17,12 @@ var mirror = document.getElementById("mirror");
 
 mirror.addEventListener("mouseover", function( event ) {   
 	mirror.parentElement.style.zIndex = "10";
-	// mirror.style.top = "-5%";
-	mirror.style.transform ="rotate(360deg)";
+	mirror.style.transform ="rotate(1080deg)";
 	document.getElementById("me-text").style.opacity = "0.8";
 }, false);
 
-// when mouse is stops hovering over circle, go back go original size && continue moving
 mirror.addEventListener("mouseout", function( event ) {   
 	mirror.parentElement.style.zIndex = "0";
-	// mirror.style.top = "0%";
-
 	mirror.style.transform ="rotate(0)";
 	document.getElementById("me-text").style.opacity = "0.0";
 
