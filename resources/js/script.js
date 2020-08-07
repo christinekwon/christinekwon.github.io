@@ -62,6 +62,9 @@ const cs_link6 = "baby-piano";
 // rhythm cooker
 const cs_link7 = "rhythm-cooker";
 
+// rhythm cooker
+const cs_link8 = "dress-an-octopus";
+
 // junior iw
 
 // l-system
@@ -98,7 +101,10 @@ function aboutMe() {
 	location.href = "pages/me.html";
 }
 
-function art() {
+function tuxedo() {
 	location.href = "https://gagosian.com/quarterly/2019/01/25/essay-jean-michel-basquiat-black-and-white/";
 }
 
+function haring() {
+	location.href = "https://www.haring.com/!/art-work/777";
+}

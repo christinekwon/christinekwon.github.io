@@ -1,5 +1,5 @@
 function animate() {
-	move("cs-Animation-0", cs_link0);
+	// move("cs-Animation-0", cs_link0);
 	move("cs-Animation-1", cs_link1);
 	move("cs-Animation-2", cs_link2);
 	move("cs-Animation-3", cs_link3);
@@ -7,6 +7,7 @@ function animate() {
 	// move("cs-Animation-5", cs_link5);
 	move("cs-Animation-6", cs_link6);
 	move("cs-Animation-7", cs_link7);
+	move("cs-Animation-8", cs_link8);
 
 	move("cd-Animation-0", cd_link0);
 	
@@ -17,7 +18,7 @@ var mirror = document.getElementById("mirror");
 
 mirror.addEventListener("mouseover", function( event ) {   
 	mirror.parentElement.style.zIndex = "10";
-	mirror.style.transform ="rotate(1080deg)";
+	mirror.style.transform ="rotate(2160deg)";
 	document.getElementById("me-text").style.opacity = "0.8";
 }, false);
 
@@ -27,6 +28,19 @@ mirror.addEventListener("mouseout", function( event ) {
 	document.getElementById("me-text").style.opacity = "0.0";
 
 }, false);
+
+// var art_container = document.getElementById("art-container");
+// var art = document.getElementById("art");
+
+// art.addEventListener("mouseover", function( event ) {   
+// 	art_container.style.zIndex = "10";
+// 	art.style.transform ="rotate(-2165deg)";
+// }, false);
+
+// art.addEventListener("mouseout", function( event ) {   
+// 	art_container.style.zIndex = "-1";
+// 	art.style.transform ="rotate(-5deg)";
+// }, false);
 
 function calcLeftTooltip(elem, tooltip) {
 	let left = elem.style.left;
