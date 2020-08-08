@@ -31,7 +31,7 @@ const backgroundColor1 = "rgb(255, 226, 211, 0.8)";
 // const backgroundColor = "rgba(128, 255, 249, 0.78)"
 const padding = "10px 0px";
 const borderRadius = "5px";
-const bottomPadding = 180;
+const bottomPadding = 150;
 const rightPadding = 125;
 // 10 is fast enough, 40 is slow enough
 const speed = 10;
