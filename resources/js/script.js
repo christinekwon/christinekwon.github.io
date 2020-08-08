@@ -63,7 +63,7 @@ const cs_link6 = "baby-piano";
 const cs_link7 = "rhythm-cooker";
 
 // rhythm cooker
-const cs_link8 = "dress-an-octopus";
+const cs_link8 = "dress-my-octopus";
 
 // junior iw
 
