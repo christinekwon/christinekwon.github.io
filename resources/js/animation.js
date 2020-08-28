@@ -1,10 +1,10 @@
 function animate() {
-	// move("cs-Animation-0", cs_link0);
+	move("cs-Animation-0", cs_link0);
 	move("cs-Animation-1", cs_link1);
 	move("cs-Animation-2", cs_link2);
 	move("cs-Animation-3", cs_link3);
 	move("cs-Animation-4", cs_link4);
-	// move("cs-Animation-5", cs_link5);
+	move("cs-Animation-5", cs_link5);
 	move("cs-Animation-6", cs_link6);
 	move("cs-Animation-7", cs_link7);
 	move("cs-Animation-8", cs_link8);
