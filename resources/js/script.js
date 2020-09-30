@@ -34,7 +34,7 @@ const borderRadius = "5px";
 const bottomPadding = 150;
 const rightPadding = 125;
 // 10 is fast enough, 40 is slow enough
-const speed = 10;
+const speed = 40;
 const tooltipLeft = "175%";
 const tooltipRight = "-155%";
 
