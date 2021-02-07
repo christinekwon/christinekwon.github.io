@@ -8,6 +8,7 @@ function animate() {
 	move("cs-Animation-6", cs_link6);
 	move("cs-Animation-7", cs_link7);
 	move("cs-Animation-8", cs_link8);
+	move("cs-Animation-9", cs_link9);
 
 	move("cd-Animation-0", cd_link0);
 	

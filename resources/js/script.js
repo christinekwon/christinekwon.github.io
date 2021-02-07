@@ -65,6 +65,9 @@ const cs_link7 = "rhythm-cooker";
 // rhythm cooker
 const cs_link8 = "dress-my-octopus";
 
+// christmas card
+const cs_link9 = "christmas";
+
 // junior iw
 
 // l-system
