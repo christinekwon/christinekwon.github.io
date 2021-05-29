@@ -9,6 +9,24 @@ body {
 	font-family: 'Roboto Mono', monospace;
 }
 
+#projects-button {
+	font-size: 14px;
+	margin: 20px;
+	padding: 15px;
+	background-color: rgba(255, 226, 211, 0.3);
+	border-radius: 5px;
+	color: rgb(100, 86, 77);
+	border: none;
+}
+
+#projects-button:hover {
+	background: rgb(255, 226, 211, 0.8);
+	color: rgb(71, 58, 50);
+  
+	-webkit-transition: .3s;
+		transition: background .3s;
+  }
+
 html:after {
   animation: grain 8s steps(10) infinite;
   background-image: url("../images/home/grain-01.png");

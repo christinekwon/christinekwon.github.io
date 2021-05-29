@@ -24,7 +24,7 @@ $(window).on("load",function(){
 // const backgroundColor1 = "rgba(255, 225, 236, 0.8)";
 
 const backgroundColor0 = "rgba(255, 226, 211, 0.3)";
-const backgroundColor1 = "rgb(255, 226, 211, 0.8)";
+const backgroundColor1 = "rgba(255, 226, 211, 0.8)";
 
 
 // const backgroundColor = "transparent";
@@ -102,6 +102,10 @@ function randomY() {
 
 function aboutMe() {
 	location.href = "pages/me.html";
+}
+
+function projects() {
+	location.href = "pages/projects.html";
 }
 
 function tuxedo() {

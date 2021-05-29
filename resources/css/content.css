@@ -1,6 +1,6 @@
 html {
     /*background: blue;*/
-    background: white;
+    background: rgb(255, 244, 209);
     color: rgb(49, 49, 49);
     /* cursor: url('../images/cursor.png'), auto;  */
 }
@@ -22,7 +22,7 @@ body {
 } */
 
 .title {
-    color: rgb(130, 148, 248);
+    color: rgb(255, 173, 188);
     /* color:  rgb(133, 110, 84); */
     font-weight: 700;
     font-size: 18px;
@@ -123,4 +123,39 @@ iframe {
     color: red;
     cursor: url('../images/cursor.png'), auto; 
 
+}
+
+.project-type {
+	color: rgb(255, 131, 154);
+    /* color:  rgb(133, 110, 84); */
+    font-weight: 700;
+    font-size: 18px;
+    padding: 4%;
+    text-align: center;
+}
+
+table {
+	width:80vw;
+	margin: 0 auto;
+}
+table, th, td {
+	border: 3px solid rgb(255, 244, 209);
+	border-collapse: collapse;
+}
+th, td {
+	padding: 15px;
+	text-align: center;
+}
+td {
+	font-size: 11px;
+}
+tr:nth-child(even) {
+	background-color: rgb(255, 227, 232);
+}
+tr:nth-child(odd) {
+	background-color: rgb(255, 206, 216);
+}
+th {
+	background-color: rgb(255, 131, 154);
+	color: white;
 }
