@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html style="background-color: black;">
+
+<head>
+    <title>fibonacci garden</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="fibonacci garden">
+    <meta name="author" content="christine minjae kwon">
+</head>
+
+<body style="visibility: hidden;">
+    <div id="cover"></div>
+    <div id="header" class="header">
+        <div class="header-left">
+            <a class="header-link" href="./">christine<br>minjae<br>kwon</a>
+        </div>
+        <div class="header-right">
+            <a class="header-link" href="./work.html">work</a>
+            <a class="header-link" href="./info.html">info</a>
+        </div>
+    </div>
+
+    <div class="title">
+        fibonacci<br>garden
+    </div>
+    <div class="body-container">
+
+        <div class="block text-block">
+            The Fibonacci garden is a generative garden of spirals created using the Fibonacci sequence.
+        </div>
+
+        <div class="block video-block">
+            <video autoplay muted loop>
+            <source src="<%=require('../videos/fibonacci/0.mp4')%>#t=0.001" type="video/mp4">
+        </video>
+        </div>
+        <div class="block video-block">
+            <video autoplay muted loop>
+            <source src="<%=require('../videos/fibonacci/1.mp4')%>#t=0.001" type="video/mp4">
+        </video>
+        </div>
+
+        <div class="block text-block">
+            At the heart of this project is an exploration of 3D representation methods of fractals. I became captivated by fractal patterns because of their ability to create extremely complex looking results with very simple rules. I desired to experiment with
+            the Fibonacci sequence for this project because I am particularly interested in the beautiful visual effects it creates in nature, as can be seen through flower petal / seed arrangement, shells, and more.
+        </div>
+
+        <div class="block image-solo image-container">
+            <img src="<%=require('../images/fibonacci/0.png')%>"></img>
+        </div>
+
+        <div class="block text-block">
+            Each time the website is loaded, 20 unique spirals are generated.
+        </div>
+
+        <div class="block image-trio image-container">
+            <img src="<%=require('../images/fibonacci/1.png')%>"></img>
+            <img src="<%=require('../images/fibonacci/2.png')%>"></img>
+            <img src="<%=require('../images/fibonacci/3.png')%>"></img>
+        </div>
+
+        <div class="block text-block">
+            Each spiral is created by first creating a stacked cube structure based on the fibonacci sequence..
+        </div>
+
+        <div class="block image-trio image-container">
+            <img src="<%=require('../images/fibonacci/cube-persp.png')%>"></img>
+            <img src="<%=require('../images/fibonacci/cube-z.png')%>"></img>
+            <img src="<%=require('../images/fibonacci/cube-y.png')%>"></img>
+        </div>
+
+        <div class="block text-block">
+            .. and then using the corners of the cubes to draw Bézier curves.
+        </div>
+
+        <div class="block image-trio image-container">
+            <img src="<%=require('../images/fibonacci/cubespiral-persp.png')%>"></img>
+            <img src="<%=require('../images/fibonacci/cubespiral-z.png')%>"></img>
+            <img src="<%=require('../images/fibonacci/cubespiral-y.png')%>"></img>
+        </div>
+
+        <div class="block text-block">
+            The user may pan around the site to observe the garden from various angles.
+        </div>
+
+        <div class="block image-solo image-container">
+            <img src="<%=require('../images/fibonacci/top.png')%>"></img>
+        </div>
+
+        <div class="block video-block">
+            <video autoplay muted loop>
+                <source src="<%=require('../videos/fibonacci/2.mp4')%>#t=0.001" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="block image-solo image-container">
+            <img src="<%=require('../images/fibonacci/bottom.png')%>"></img>
+        </div>
+        <div class="block video-block">
+            <video autoplay muted loop>
+                <source src="<%=require('../videos/fibonacci/3.mp4')%>#t=0.001" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="block text-block">
+            This project was c reated as my independent work project for the 21-22 spring semester. I was advised by Professor Jeff Snyder at Princeton University.
+        </div>
+
+        <div class="block text-block">
+            This
+            <a class="inline-link" href="https://www.are.na/nowk-enitsirhc/latcarf\">are.na channel</a> is what I used to gather inspiration and materials, as well as document my process a bit
+        </div>
+
+
+        <!-- <div class="image-block"></div>
+        <div class="video-block"></div>
+        <div class="link-block"></div> -->
+    </div>
+    <!-- footer? -->
+
+</body>
+
+
+</html>

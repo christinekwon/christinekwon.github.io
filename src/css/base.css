@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Chicago;
+    src: url(../fonts/ChiKareGo2.ttf);
+}
+
+@font-face {
+    font-family: Geneva;
+    src: url(../fonts/FindersKeepers.ttf);
+}
+
+@font-face {
+    font-family: Smaragd;
+    src: url(../fonts/smaragd/Smaragd.otf);
+}
+
+body {
+    /* font-family: Chicago; */
+    font-family: Smaragd, Times, serif;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-family: 'Roboto Mono', monospace; */
+}
+
+html {
+    transition: 1s;
+    background: black;
+    color: white;
+}
+
+#cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background: black;
+    pointer-events: none;
+}

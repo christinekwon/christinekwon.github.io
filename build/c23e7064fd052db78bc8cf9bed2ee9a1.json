@@ -1,0 +1,37 @@
+{
+    "tinder": {
+        "title": "tinder",
+        "type": "GD",
+        "link": "https://www.youtube.com/watch?v=Bq1pT2-5Y9g&ab_channel=TinderKorea",
+        "media": [{
+            "type": "image",
+            "url": "GD/tinder.jpg"
+        }],
+        "description": [{
+                "type": "text",
+                "content": "I worked for the Tinder Korea marketing team, and led a team in creating a video promoting the app in partnership with the dancer <a href=\"https://www.instagram.com/hyojin__choi__/?hl=en\">Hyojin Choi</a>."
+            },
+            {
+                "type": "text",
+                "content": "<a href=\"./tinder.html\">Learn more</a>"
+            }
+        ],
+        "date": "2104",
+        "tools": "Adobe Photoshop, Premiere Pro, Illustrator"
+    },
+    "hackprinceton": {
+        "title": "hackprinceton",
+        "type": "GD",
+        "link": "",
+        "media": [{
+            "type": "image",
+            "url": "GD/hackprinceton.png"
+        }],
+        "description": [{
+            "type": "text",
+            "content": "I crafted the graphic identity for the fall 2019 season of HackPrinceton, a bi-annual student-run hackathon that hosts over 400 students."
+        }],
+        "date": "1911",
+        "tools": "Adobe Illustrator"
+    }
+}
